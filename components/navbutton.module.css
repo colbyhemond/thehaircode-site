@@ -1,0 +1,19 @@
+.NavButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100%;
+
+    cursor: pointer;
+}
+
+.Icon {
+    font-size: 25px;
+}
+
+.Label {
+    font-size: 14px;
+    text-transform: capitalize;
+}

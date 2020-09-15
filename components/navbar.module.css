@@ -1,0 +1,13 @@
+.logo {
+    padding: 0vh 5vh;
+    width: 25vh;
+}
+
+.button {
+    margin: 0 3vh;
+    color: black;
+}
+
+.button:hover {
+    color: black;
+}

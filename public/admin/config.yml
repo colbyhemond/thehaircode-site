@@ -1,0 +1,104 @@
+backend:
+  name: test-repo
+  branch: master
+media_folder: public/img
+public_folder: img
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+    - label: "Home"
+      name: "home"
+      file: "content/home.md"
+      fields:
+        - { label: "Title", name: "title", widget: "string"}
+        - { label: "Publish Date", name: "date", widget: "datetime" }
+        - label: "Jumbotron" 
+          name: "jumbotron"
+          widget: "image"
+          default: "https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1647&q=80"
+          media_library:
+            config:
+              multiple: true
+        - { label: "Jumtotron Text 1", name: "jumboText1", widget: "string" }
+        - { label: "Jumtotron Text 2", name: "jumboText2", widget: "string" }
+        - label: "Card 1 - Image"
+          name: "card1Img"
+          widget: "image"
+          default: "https://images.unsplash.com/photo-1531257243018-c547a2e35767?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1082&q=80"
+          media_library:
+            config:
+              multiple: false
+        - { label: "Card 1 - Title", name: "card1Title", widget: "string" }
+        - { label: "Card 1 - Text", name: "card1Text", widget: "text" }
+        - { label: "Card 1 - Button Text", name: "card1ButtonText", widget: "string" }
+        - label: "Card 2 - Image"
+          name: "card2Img"
+          widget: "image"
+          default: "https://images.unsplash.com/photo-1531257243018-c547a2e35767?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1082&q=80"
+          media_library:
+            config:
+              multiple: false
+        - { label: "Card 2 - Title", name: "card2Title", widget: "string" }
+        - { label: "Card 2 - Text", name: "card2Text", widget: "text" }
+        - { label: "Card 2 - Button Text", name: "card2ButtonText", widget: "string" }
+        - label: "Card 3 - Image"
+          name: "card-3-img"
+          widget: "image"
+          default: "https://images.unsplash.com/photo-1531257243018-c547a2e35767?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1082&q=80"
+          media_library:
+            config:
+              multiple: false
+        - { label: "Card 3 - Title", name: "card3Title", widget: "string" }
+        - { label: "Card 3 - Text", name: "card3Text", widget: "text" }
+        - { label: "Card 3 - Button Text", name: "card3ButtonText", widget: "string" }
+        - { label: "Body", name: "body", widget: "markdown"}
+    - label: "About"
+      name: "about"
+      file: "content/about.md"
+      fields:
+        - { label: "Title", name: "title", required: false, widget: "string"}
+        - { label: "Body", name: "body", widget: "markdown"}
+        - label: "Image"
+          name: "image"
+          widget: "image"
+          default: "https://images.unsplash.com/photo-1531257243018-c547a2e35767?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1082&q=80"
+          media_library:
+            config:
+              multiple: false
+    - label: "Services"
+      name: "services"
+      file: "content/services.md"
+      fields:
+        - { label: "Title", name: "title", required: false, widget: "string"}
+        - { label: "Body", name: "body", widget: "markdown"}
+        - label: Services
+          name: services
+          widget: list
+          fields:
+            - { label: Service Name, name: service, widget: text }
+            - { label: Description, name: description, widget: string }
+    - label: "Order Inquiries"
+      name: "order"
+      file: "content/order.md"
+      fields:
+        - { label: "Title", name: "title", required: false, widget: "string"}
+        - { label: "Message", name: "message", widget: "string"}
+    - label: "Contact"
+      name: "contact"
+      file: "content/contact.md"
+      fields:
+        - { label: "Title", name: "title", required: false, widget: "string"}
+        - { label: "Message", name: "message", widget: "string"}
+    - label: "FAQ"
+      name: "faq"
+      file: "content/faq.md"
+      fields:
+        - { label: "Title", name: "title", required: false, widget: "string"}
+        - { label: "Body", name: "body", widget: "markdown"}
+        - label: "Questions and Answers"
+          name: "faqs"
+          widget: "list"
+          fields:
+            - {label: Question, name: question, widget: text, default: "Is this a question?"}
+            - {label: Answer, name: answer, widget: text, default: "this is an answer"}
