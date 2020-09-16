@@ -30,6 +30,7 @@ export default class Home extends Component {
                   </div>
                 )}
             </div>
+            <p>test</p>
           </div>
         </Layout>
         

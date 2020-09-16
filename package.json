@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
-    "export": "npm run build && next export"
+    "export": "next export"
   },
   "keywords": [],
   "author": "",
