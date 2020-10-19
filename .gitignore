@@ -1,2 +1,8 @@
 node_modules
 .next
+
+# production
+/out
+/build
+/.next
+/.next-export
