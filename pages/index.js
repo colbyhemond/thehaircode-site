@@ -81,10 +81,6 @@ export default class Home extends Component {
             align-items: center;
           }
           
-          .center{
-            
-          }
-          
           .card {
             margin: 20px;
           }

@@ -21,8 +21,8 @@ module.exports = {
           '/faq': { page: '/faq' },
           '/index': { page: '/index' },
           '/order': { page: '/order' },
-          '/services': { page: '/services' },
-
+          '/services': { page: '/services' }
         }
       }
+    //   target: 'server'
 }
