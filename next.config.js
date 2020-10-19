@@ -8,5 +8,6 @@ module.exports = {
             }
         )
         return cfg;
-    }
+    },
+    distDir: 'out'
 }
