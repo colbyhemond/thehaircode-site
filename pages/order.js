@@ -19,7 +19,7 @@ export default class Order extends Component {
             <div className="d-flex justify-content-center"> 
               <OrderForm />
             </div>
-            <iframe src="https://calendar.google.com/calendar/embed?src=7eo8cbdt5h82dfrujv2omptnhc%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            <iframe src="https://calendar.google.com/calendar/embed?src=7eo8cbdt5h82dfrujv2omptnhc%40group.calendar.google.com&ctz=America%2FNew_York"  width="800" height="600" frameborder="0" scrolling="no"></iframe>
           </div>
 
 
