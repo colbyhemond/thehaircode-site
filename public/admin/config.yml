@@ -99,5 +99,5 @@ collections:
           name: "faqs"
           widget: "list"
           fields:
-            - {label: Question, name: question, widget: text, default: "Is this a question?"}
-            - {label: Answer, name: answer, widget: text, default: "this is an answer"}
+            - {label: Question, name: question, widget: text, default: "[write the question here]"}
+            - {label: Answer, name: answer, widget: text, default: "[write the answer here]"}
