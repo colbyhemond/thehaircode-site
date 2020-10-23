@@ -8,4 +8,3 @@ faqs:
   - answer: Answer3
     question: Question 3
 ---
-body required?
