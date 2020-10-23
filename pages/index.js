@@ -13,7 +13,7 @@ export default class Home extends Component {
     
     let { 
       title, 
-      jumbotron, jumbotronText1, jumbotronText2,
+      jumbotron, jumboText1, jumboText2,
       card1Img, card1Title, card1Text, card1ButtonText,
       card2Img, card2Title, card2Text, card2ButtonText,
       card3Img, card3Title, card3Text, card3ButtonText
@@ -28,8 +28,8 @@ export default class Home extends Component {
 
           <div className="jumbotron fluid">
             <div className='center'>
-              <h1>{ jumbotronText1 }</h1>
-              <p>{ jumbotronText2 }</p>
+              <h1>{ jumboText1 }</h1>
+              <p>{ jumboText2 }</p>
             </div>
           </div>
           <div className="container">
