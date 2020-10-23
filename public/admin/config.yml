@@ -52,7 +52,6 @@ collections:
         - { label: "Card 3 - Title", name: "card3Title", widget: "string" }
         - { label: "Card 3 - Text", name: "card3Text", widget: "text" }
         - { label: "Card 3 - Button Text", name: "card3ButtonText", widget: "string" }
-        - { label: "Body", name: "body", widget: "markdown"}
     - label: "About"
       name: "about"
       file: "content/about.md"

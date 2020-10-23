@@ -19,11 +19,4 @@ card3Img: 'https://images.unsplash.com/photo-1531257243018-c547a2e35767?ixlib=rb
 card3Title: 'Card Title'
 card3Text: "Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content."
 card3ButtonText: "Go Somewhere"
-cats:
-  - description: 'Maru is a Scottish Fold from Japan, and he loves boxes.'
-    name: Maru (まる)
-  - description: Lil Bub is an American celebrity cat known for her unique appearance.
-    name: Lil Bub
-  - description: 'Grumpy cat is an American celebrity cat known for her grumpy appearance.'
-    name: Grumpy cat (Tardar Sauce)
 ---
