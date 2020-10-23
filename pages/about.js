@@ -7,7 +7,7 @@ import Layout from '../components/Layout'
 export default class Home extends Component {
   render() {
     let { 
-      html,
+      react,
       attributes: {
       title, 
       image 
@@ -23,7 +23,7 @@ export default class Home extends Component {
             <h1>{ title }</h1>
             <div className="body">
               <img className="img-align-right" src={ image } />
-              <p>{ html }</p>
+              <p>{ react }</p>
             </div>
           </div>
         </Layout>
