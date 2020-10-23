@@ -58,7 +58,7 @@ collections:
       file: "content/about.md"
       fields:
         - { label: "Title", name: "title", required: false, widget: "string"}
-        - { label: "Body", name: "body", widget: "markdown"}
+        - { label: "Body", name: "body", required: false, widget: "markdown"}
         - label: "Image"
           name: "image"
           widget: "image"
@@ -71,7 +71,7 @@ collections:
       file: "content/services.md"
       fields:
         - { label: "Title", name: "title", required: false, widget: "string"}
-        - { label: "Body", name: "body", widget: "markdown"}
+        - { label: "Body", name: "body", required: false, widget: "markdown"}
         - label: Services
           name: services
           widget: list
@@ -95,7 +95,7 @@ collections:
       file: "content/faq.md"
       fields:
         - { label: "Title", name: "title", required: false, widget: "string"}
-        - { label: "Body", name: "body", widget: "markdown"}
+        - { label: "Body", name: "body", required: false, widget: "markdown"}
         - label: "Questions and Answers"
           name: "faqs"
           widget: "list"
