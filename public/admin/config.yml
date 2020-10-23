@@ -57,7 +57,6 @@ collections:
       file: "content/about.md"
       fields:
         - { label: "Title", name: "title", required: false, widget: "string"}
-        - { label: "Body", name: "body", required: false, widget: "markdown"}
         - label: "Image"
           name: "image"
           widget: "image"
@@ -65,6 +64,7 @@ collections:
           media_library:
             config:
               multiple: false
+        - { label: "Body", name: "body", required: false, widget: "markdown"}
     - label: "Services"
       name: "services"
       file: "content/services.md"
