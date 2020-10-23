@@ -1,16 +1,17 @@
 import Head from "next/head"
 import { Component } from 'react'
-import { attributes, react as HomeContent } from '../content/about.md';
+import about from '../content/about.md';
 import Layout from '../components/Layout'
 
 
 export default class Home extends Component {
   render() {
     let { 
+      html,
+      attributes: {
       title, 
-      body, 
       image 
-    } = attributes;
+    } } = about;
     return (
       <>
         <Layout>
@@ -22,7 +23,7 @@ export default class Home extends Component {
             <h1>{ title }</h1>
             <div className="body">
               <img className="img-align-right" src={ image } />
-              <p>{ body }</p>
+              <p>{ html }</p>
             </div>
           </div>
         </Layout>
