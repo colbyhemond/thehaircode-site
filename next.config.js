@@ -9,7 +9,7 @@ module.exports = {
         )
         return cfg;
     },
-    distDir: 'out',
+    // distDir: 'out',
     exportPathMap: async function (
         defaultPathMap,
         { dev, dir, outDir, distDir, buildId }
@@ -19,10 +19,10 @@ module.exports = {
           '/about': { page: '/about' },
           '/contact': { page: '/contact' },
           '/faq': { page: '/faq' },
-          '/index': { page: '/index' },
+          'index': { page: '/index' },
           '/order': { page: '/order' },
           '/services': { page: '/services' }
         }
       }
-    //   target: 'server'
+    //   target: 'serverless'
 }

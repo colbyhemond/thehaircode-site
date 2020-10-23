@@ -6,3 +6,9 @@ node_modules
 /build
 /.next
 /.next-export
+
+.next/
+node_modules/
+/npm-debug.log
+.DS_Store
+out/
