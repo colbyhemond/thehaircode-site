@@ -2,8 +2,8 @@
 title: Home
 date: 2019-03-17T19:31:20.591Z
 jumbotron: 'https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1647&q=80'
-jumbo-text-1: 'The Blended Bakery'
-jumbo-text-2: 'The best cookies ever!'
+jumboText1: 'The Blended Bakery'
+jumboText2: 'The best cookies ever!'
 card1Img: 'https://images.unsplash.com/photo-1531257243018-c547a2e35767?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1082&q=80'
 # Card One
 card1Title: 'Card Title'
@@ -27,6 +27,3 @@ cats:
   - description: 'Grumpy cat is an American celebrity cat known for her grumpy appearance.'
     name: Grumpy cat (Tardar Sauce)
 ---
-Welcome to my awesome page about cats of the internet.
-
-This page is built with NextJS, and content is managed in Netlify CMS
