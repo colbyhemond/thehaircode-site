@@ -6,7 +6,7 @@ import OrderForm from '../components/OrderForm'
 
 export default class Order extends Component {
   render() {
-    let { title, date, cats } = attributes;
+    let { title, date} = attributes;
     return (
       <>
         <Layout>
@@ -19,7 +19,10 @@ export default class Order extends Component {
             <div className="d-flex justify-content-center"> 
               <OrderForm />
             </div>
-            <iframe src="https://calendar.google.com/calendar/embed?src=7eo8cbdt5h82dfrujv2omptnhc%40group.calendar.google.com&ctz=America%2FNew_York"  width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            <div className="d-flex justify-content-center">
+
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=N2VvOGNiZHQ1aDgyZGZydWp2Mm9tcHRuaGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D50000&amp;showTz=0&amp;showCalendars=0&amp;showTabs=0&amp;showPrint=0&amp;showDate=1&amp;showNav=1&amp;showTitle=0&amp;mode=MONTH"  width="100%" height="500" frameborder="0" scrolling="no"></iframe>
+            </div>
           </div>
 
 
