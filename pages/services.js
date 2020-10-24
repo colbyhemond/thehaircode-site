@@ -1,6 +1,6 @@
 import Head from "next/head"
 import { Component } from 'react'
-import { attributes, react as HomeContent } from '../content/services.md';
+import { attributes, react as ServicesContent } from '../content/services.md';
 import Layout from '../components/Layout'
 
 
@@ -8,7 +8,6 @@ export default class Home extends Component {
   render() {
     let { 
       title, 
-      body,
       services, 
       image 
     } = attributes;
@@ -22,6 +21,7 @@ export default class Home extends Component {
           <div className="container">
             <h1>{ title }</h1>
             <div className="body">
+              <ServicesContent />
               <img className="img-align-left" src={ image } />
                 {services.map( service => 
                   <div>
@@ -30,7 +30,6 @@ export default class Home extends Component {
                   </div>
                 )}
             </div>
-            <p>test</p>
           </div>
         </Layout>
         
