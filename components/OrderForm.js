@@ -1,7 +1,7 @@
 import styles from './form.module.css'
 
 const OrderForm = props => (
-        <form name="order" method="POST" className={styles.form} netlify>
+        <form name="order" method="POST" className={styles.form} data-netlify="true">
             <input type="hidden" name="form-name" value="order" />
             <p>
                 <label htmlFor="name">
