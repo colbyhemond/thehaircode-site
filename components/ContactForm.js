@@ -1,7 +1,7 @@
 import styles from './form.module.css'
 
 const ContactForm = props => (
-        <form name="contact" method="POST" className={styles.form}>
+        <form name="contact" method="POST" className={styles.form} data-netlify="true">
             <input type="hidden" name="form-name" value="contact" />
             <p>
                 <label htmlFor="name">
