@@ -9,11 +9,7 @@ export default class Home extends Component {
     let { title, date, cats } = attributes;
     return (
       <>
-        <Layout>
-
-          <Head>
-            <title>{title} - The Blended Bakery</title>
-          </Head>
+        <Layout title={title}>
           <div className="container">
             <h1>{title}</h1>
             <div className="d-flex justify-content-center">

@@ -13,11 +13,7 @@ export default class Home extends Component {
     } = attributes;
     return (
       <>
-        <Layout>
-
-          <Head>
-            <title>{title} - The Blended Bakery</title>
-          </Head>
+        <Layout title={title}>
           <div className="container">
             <h1>{ title }</h1>
             <div className="body">

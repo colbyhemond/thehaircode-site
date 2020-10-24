@@ -21,11 +21,6 @@ export default class Home extends Component {
     return (
       <>
         <Layout home title={title}>
-
-          <Head>
-
-          </Head>
-
           <div className="jumbotron fluid">
             <div className='center'>
               <h1>{ jumboText1 }</h1>

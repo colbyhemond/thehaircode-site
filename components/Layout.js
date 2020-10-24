@@ -6,7 +6,7 @@ import NavBar from './NavBar'
 
 import navButtons from '../config/buttons'
 
-export const siteTitle = 'Testing Next with Netlify CMS'
+export const siteTitle = 'The Blended Bakery'
 
 export default function Layout({ children, home, title }) {
     return (
@@ -16,7 +16,7 @@ export default function Layout({ children, home, title }) {
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossOrigin="anonymous"/>
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="The Blended Bakery."
         />
         <meta
           property="og:image"
