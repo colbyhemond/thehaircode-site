@@ -3,6 +3,7 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import NavBar from './NavBar'
+import Footer from './Footer'
 
 import navButtons from '../config/buttons'
 
@@ -30,8 +31,10 @@ export default function Layout({ children, home, title }) {
     <title>{title} - The Blended Bakery</title>
         </Head>
         <NavBar navButtons={navButtons} />
-      <main>{children}</main>
-      
+
+      <main className={styles.main}>{children}</main>
+
+      <Footer navButtons={navButtons}/>
         </>
      )
 }

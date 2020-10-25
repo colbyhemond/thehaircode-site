@@ -15,9 +15,13 @@ export default class Home extends Component {
         <Layout title={title}>
           <div className="container">
             <h1>{ title }</h1>
-            <div className="body">
-              <img className="img-align-right" src={ image } />
-              <AboutContent />
+            <div className="body row">
+              <div className="col">
+                <AboutContent />
+              </div>
+              <div className="col">
+                <img className="img-align-right" src={ image } />
+              </div>
             </div>
           </div>
         </Layout>

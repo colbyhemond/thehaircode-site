@@ -20,7 +20,7 @@ export default class Home extends Component {
               <ServicesContent />
               <img className="img-align-left" src={ image } />
                 {services.map( service => 
-                  <div>
+                  <div key={service.service}>
                     <h2 key={service.service}>{service.service}</h2>
                     <p key={service.service}>{service.description}</p>
                   </div>
