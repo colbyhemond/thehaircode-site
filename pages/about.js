@@ -16,10 +16,10 @@ export default class Home extends Component {
           <div className="container">
             <h1>{ title }</h1>
             <div className="body row">
-              <div className="col">
+              <div className="col-sm-12">
                 <AboutContent />
               </div>
-              <div className="col">
+              <div className="col-sm-12">
                 <img className="img-align-right" src={ image } />
               </div>
             </div>
