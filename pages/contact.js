@@ -3,10 +3,14 @@ import { Component } from 'react'
 import { attributes, react as HomeContent } from '../content/contact.md';
 import Layout from '../components/Layout'
 import ContactForm from '../components/ContactForm'
+import ImgRow from '../components/ImgRow'
 
 export default class Home extends Component {
   render() {
-    let { title } = attributes;
+    let { title,
+          img1,
+          img2,
+          img3 } = attributes;
     return (
       <>
         <Layout title={title}>
@@ -15,7 +19,7 @@ export default class Home extends Component {
             <div className="body d-flex justify-content-center">
               <ContactForm />
             </div>
-
+            <ImgRow img1={ img1 } img2={ img2 } img3={ img3 } />
           </div>
         </Layout>
       

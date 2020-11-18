@@ -2,13 +2,17 @@ import Head from "next/head"
 import { Component } from 'react'
 import { attributes, react as AboutContent } from '../content/about.md';
 import Layout from '../components/Layout'
+import ImgRow from '../components/ImgRow'
 
 
 export default class Home extends Component {
   render() {
     let { 
       title, 
-      image 
+      image,
+      img1,
+      img2,
+      img3
     } = attributes;
     return (
       <>
@@ -23,6 +27,7 @@ export default class Home extends Component {
                 <img className="img-align-right" src={ image } />
               </div>
             </div>
+            <ImgRow img1={ img1 } img2={ img2 } img3={ img3 } />
           </div>
         </Layout>
 

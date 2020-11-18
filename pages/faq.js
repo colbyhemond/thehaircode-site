@@ -4,12 +4,16 @@ import { attributes, react as HomeContent } from '../content/faq.md';
 import Layout from '../components/Layout'
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
+import ImgRow from '../components/ImgRow'
 
 export default class Home extends Component {
   render() {
     let { 
       title,
-      faqs
+      faqs,
+      img1,
+      img2,
+      img3
     } = attributes;
     return (
       <>
@@ -28,6 +32,7 @@ export default class Home extends Component {
               </Card>
               )}
             </Accordion>
+            <ImgRow img1={ img1 } img2={ img2 } img3={ img3 } />
           </div>
         </Layout>
       
