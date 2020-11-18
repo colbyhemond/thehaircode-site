@@ -2,6 +2,7 @@ import Head from "next/head"
 import { Component } from 'react'
 import { attributes, react as ServicesContent } from '../content/services.md';
 import Layout from '../components/Layout'
+import ImgRow from '../components/ImgRow'
 
 
 export default class Home extends Component {
@@ -9,7 +10,10 @@ export default class Home extends Component {
     let { 
       title, 
       services, 
-      image 
+      image,
+      img1,
+      img2,
+      img3
     } = attributes;
     return (
       <>
@@ -25,6 +29,7 @@ export default class Home extends Component {
                   </div>
                 )}
             </div>
+            <ImgRow img1={ img1 } img2={ img2 } img3={ img3 } />
           </div>
         </Layout>
         
