@@ -17,8 +17,7 @@ export default class Home extends Component {
           <div className="container">
             <h1>{ title }</h1>
             <div className="body">
-              <ServicesContent />
-              <img className="img-align-left" src={ image } />
+              <img className="img-align-right" src={ image } />
                 {services.map( service => 
                   <div key={service.service}>
                     <h2 key={service.service}>{service.service}</h2>

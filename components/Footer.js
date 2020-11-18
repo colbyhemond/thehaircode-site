@@ -18,10 +18,12 @@ const Footer = props => (
 
         </Navbar>
         <div className="d-flex justify-content-center py-2">
-            Copyright 2020 The Blended Bakery
+            Copyright { year } The Blended Bakery
         </div>
     
     </div>
 );
+
+let year = new Date().getFullYear();
 
 export default Footer;

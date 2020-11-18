@@ -6,13 +6,13 @@ import ContactForm from '../components/ContactForm'
 
 export default class Home extends Component {
   render() {
-    let { title, date, cats } = attributes;
+    let { title } = attributes;
     return (
       <>
         <Layout title={title}>
           <div className="container">
             <h1>{title}</h1>
-            <div className="d-flex justify-content-center">
+            <div className="body d-flex justify-content-center">
               <ContactForm />
             </div>
 

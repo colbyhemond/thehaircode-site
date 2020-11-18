@@ -6,13 +6,13 @@ import OrderForm from '../components/OrderForm'
 
 export default class Order extends Component {
   render() {
-    let { title, date} = attributes;
+    let { title } = attributes;
     return (
       <>
         <Layout title={title}>
           <div className="container">
             <h1>{title}</h1>
-            <div className="d-flex justify-content-center pb-3"> 
+            <div className="body d-flex justify-content-center pb-3"> 
               <OrderForm />
             </div>
             <h3>Availability</h3>
