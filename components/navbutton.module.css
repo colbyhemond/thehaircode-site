@@ -3,9 +3,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
+    padding: 2vh 3vh;
     height: 100%;
-
     cursor: pointer;
 }
 

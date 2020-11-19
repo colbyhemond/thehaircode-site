@@ -4,10 +4,10 @@
 }
 
 .button {
-    margin: 0 3vh;
     color: black;
 }
 
 .button:hover {
-    color: black;
+    color: white;
+    background-color: var(--bb-pink);
 }
