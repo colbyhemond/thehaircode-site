@@ -65,6 +65,27 @@ collections:
             config:
               multiple: false
         - { label: "Body", name: "body", required: false, widget: "markdown"}
+        - label: "Image"
+          name: "img1"
+          widget: "image"
+          default: ""
+          media_library:
+            config:
+              multiple: false
+        - label: "Image"
+          name: "img2"
+          widget: "image"
+          default: ""
+          media_library:
+            config:
+              multiple: false
+        - label: "Image"
+          name: "img3"
+          widget: "image"
+          default: ""
+          media_library:
+            config:
+              multiple: false
     - label: "Services"
       name: "services"
       file: "content/services.md"
@@ -110,6 +131,27 @@ collections:
       fields:
         - { label: "Title", name: "title", required: false, widget: "string"}
         - { label: "Message", name: "message", widget: "string"}
+        - label: "Image"
+          name: "img1"
+          widget: "image"
+          default: ""
+          media_library:
+            config:
+              multiple: false
+        - label: "Image"
+          name: "img2"
+          widget: "image"
+          default: ""
+          media_library:
+            config:
+              multiple: false
+        - label: "Image"
+          name: "img3"
+          widget: "image"
+          default: ""
+          media_library:
+            config:
+              multiple: false
     - label: "FAQ"
       name: "faq"
       file: "content/faq.md"
@@ -122,3 +164,24 @@ collections:
           fields:
             - {label: Question, name: question, widget: text, default: "[write the question here]"}
             - {label: Answer, name: answer, widget: text, default: "[write the answer here]"}
+        - label: "Image"
+          name: "img1"
+          widget: "image"
+          default: ""
+          media_library:
+            config:
+              multiple: false
+        - label: "Image"
+          name: "img2"
+          widget: "image"
+          default: ""
+          media_library:
+            config:
+              multiple: false
+        - label: "Image"
+          name: "img3"
+          widget: "image"
+          default: ""
+          media_library:
+            config:
+              multiple: false
