@@ -18,7 +18,7 @@ export default class Home extends Component {
     return (
       <>
         <Layout title={title}>
-          <div className="container">
+          <div className="container body">
             <h1>{title}</h1>
             <Accordion>
               {faqs.map( faq =>

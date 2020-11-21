@@ -30,11 +30,11 @@ export default function Layout({ children, home, title }) {
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <title>{title} - The Blended Bakery</title>
         </Head>
-        <NavBar navButtons={navButtons} />
+        <NavBar navButtons={navButtons} className='body'/>
 
       <main className={styles.main}>{children}</main>
 
-      <Footer navButtons={navButtons}/>
+      <Footer navButtons={navButtons} className='body'/>
         </>
      )
 }

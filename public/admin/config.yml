@@ -77,6 +77,27 @@ collections:
           fields:
             - { label: Service Name, name: service, widget: text }
             - { label: Description, name: description, widget: string }
+        - label: "Image"
+          name: "img1"
+          widget: "image"
+          default: ""
+          media_library:
+            config:
+              multiple: false
+        - label: "Image"
+          name: "img2"
+          widget: "image"
+          default: ""
+          media_library:
+            config:
+              multiple: false
+        - label: "Image"
+          name: "img3"
+          widget: "image"
+          default: ""
+          media_library:
+            config:
+              multiple: false
     - label: "Order Inquiries"
       name: "order"
       file: "content/order.md"

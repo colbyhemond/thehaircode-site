@@ -22,7 +22,7 @@ export default class Home extends Component {
       <>
         <Layout home title={title}>
           <div className="jumbotron fluid">
-            <div className='center'>
+            <div className='center body'>
               <h1>{ jumboText1 }</h1>
               <p>{ jumboText2 }</p>
             </div>
