@@ -69,6 +69,7 @@ collections:
           name: "img1"
           widget: "image"
           default: ""
+          required: false
           media_library:
             config:
               multiple: false
@@ -76,6 +77,7 @@ collections:
           name: "img2"
           widget: "image"
           default: ""
+          required: false
           media_library:
             config:
               multiple: false
@@ -83,6 +85,7 @@ collections:
           name: "img3"
           widget: "image"
           default: ""
+          required: false
           media_library:
             config:
               multiple: false
@@ -102,6 +105,7 @@ collections:
           name: "img1"
           widget: "image"
           default: ""
+          required: false
           media_library:
             config:
               multiple: false
@@ -109,6 +113,7 @@ collections:
           name: "img2"
           widget: "image"
           default: ""
+          required: false
           media_library:
             config:
               multiple: false
@@ -116,6 +121,7 @@ collections:
           name: "img3"
           widget: "image"
           default: ""
+          required: false
           media_library:
             config:
               multiple: false
@@ -135,6 +141,7 @@ collections:
           name: "img1"
           widget: "image"
           default: ""
+          required: false
           media_library:
             config:
               multiple: false
@@ -142,6 +149,7 @@ collections:
           name: "img2"
           widget: "image"
           default: ""
+          required: false
           media_library:
             config:
               multiple: false
@@ -149,6 +157,7 @@ collections:
           name: "img3"
           widget: "image"
           default: ""
+          required: false
           media_library:
             config:
               multiple: false
@@ -168,6 +177,7 @@ collections:
           name: "img1"
           widget: "image"
           default: ""
+          required: false
           media_library:
             config:
               multiple: false
@@ -175,6 +185,7 @@ collections:
           name: "img2"
           widget: "image"
           default: ""
+          required: false
           media_library:
             config:
               multiple: false
@@ -182,6 +193,7 @@ collections:
           name: "img3"
           widget: "image"
           default: ""
+          required: false
           media_library:
             config:
               multiple: false
