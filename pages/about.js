@@ -20,11 +20,11 @@ export default class Home extends Component {
           <div className="container">
             <h1>{ title }</h1>
             <div className="body row">
-              <div className="col-sm-12">
+              <div className="col-12 col-sm-7">
                 <AboutContent />
               </div>
-              <div className="col-sm-12">
-                <img className="img-align-right" src={ image } />
+              <div className="col-12 col-sm-5 text-center">
+                <img className="img" src={ image } />
               </div>
             </div>
             <ImgRow img1={ img1 } img2={ img2 } img3={ img3 } />
@@ -33,8 +33,10 @@ export default class Home extends Component {
 
         <style type="text/css"> {
           ` 
-          .img-align-right {
+          .img {
             max-width: 300px;
+            width: 100%;
+            height: auto;
           }
 
           .container {
