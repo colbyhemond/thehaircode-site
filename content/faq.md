@@ -7,4 +7,6 @@ faqs:
     question: Is this question 2?
   - answer: Answer3
     question: Question 3
+img1: /img/globe_cookie.jpg
 ---
+
