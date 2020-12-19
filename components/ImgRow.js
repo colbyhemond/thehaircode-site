@@ -1,15 +1,21 @@
 import styles from "./imgrow.module.css";
 
 const ImgRow = props => (
-    <div className="container d-flex flex-wrap pt-5 mt-5">
-        <div className="col-md-4 d-flex justify-content-center my-1">
-            <img className={styles.img} src={props.img1}></img>
+    <div className="container d-flex flex-wrap justify-content-center pt-5 mt-5">
+        <div className="col-sm-4 d-flex justify-content-center my-2">
+            <div>
+                <img className="img-fluid" src={props.img1}></img>
+            </div>
         </div>
-        <div className="col-md-4 d-flex justify-content-center my-1">
-            <img className={styles.img} src={props.img2}></img>
+        <div className="col-sm-4 d-flex justify-content-center my-2">
+            <div>
+                <img className="img-fluid" src={props.img2}></img>
+            </div>
         </div>
-        <div className="col-md-4 d-flex justify-content-center my-1">
-            <img className={styles.img} src={props.img3}></img>
+        <div className="col-sm-4 d-flex justify-content-center my-2">
+            <div>
+                <img className="img-fluid" src={props.img3}></img>
+            </div>
         </div>
     </div>
 );
