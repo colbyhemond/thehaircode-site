@@ -46,7 +46,7 @@ const OrderForm = props => (
             <div className="form-group row">
                 <label htmlFor="themes" className="col-sm-2">Themes</label>
                 <div className="col-sm-10">
-                    <input type="text" name="phone" id="phone" />
+                    <input type="text" name="themes" id="themes" />
                 </div>
             </div>
             <div className="form-group row">
