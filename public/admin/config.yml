@@ -36,12 +36,12 @@ collections:
           name: "buttonLink1"
           widget: "select"
           options:
-            - { label: "Home", value: "theblendedbakery.com" }
-            - { label: "About", value: "theblendedbakery.com/about" }
-            - { label: "Services", value: "theblendedbakery.com/services" }
-            - { label: "Order", value: "theblendedbakery.com/order" }
-            - { label: "Contact", value: "theblendedbakery.com/contact" }
-            - { label: "FAQ", value: "theblendedbakery.com/faq" }
+            - { label: "Home", value: "/" }
+            - { label: "About", value: "/about" }
+            - { label: "Services", value: "/services" }
+            - { label: "Order", value: "/order" }
+            - { label: "Contact", value: "/contact" }
+            - { label: "FAQ", value: "/faq" }
         - label: "Card 2 - Image"
           name: "card2Img"
           widget: "image"
@@ -56,12 +56,12 @@ collections:
           name: "buttonLink2"
           widget: "select"
           options:
-            - { label: "Home", value: "theblendedbakery.com" }
-            - { label: "About", value: "theblendedbakery.com/about" }
-            - { label: "Services", value: "theblendedbakery.com/services" }
-            - { label: "Order", value: "theblendedbakery.com/order" }
-            - { label: "Contact", value: "theblendedbakery.com/contact" }
-            - { label: "FAQ", value: "theblendedbakery.com/faq" }
+            - { label: "Home", value: "/" }
+            - { label: "About", value: "/about" }
+            - { label: "Services", value: "/services" }
+            - { label: "Order", value: "/order" }
+            - { label: "Contact", value: "/contact" }
+            - { label: "FAQ", value: "/faq" }
         - label: "Card 3 - Image"
           name: "card-3-img"
           widget: "image"
@@ -76,12 +76,12 @@ collections:
           name: "buttonLink3"
           widget: "select"
           options:
-            - { label: "Home", value: "theblendedbakery.com" }
-            - { label: "About", value: "theblendedbakery.com/about" }
-            - { label: "Services", value: "theblendedbakery.com/services" }
-            - { label: "Order", value: "theblendedbakery.com/order" }
-            - { label: "Contact", value: "theblendedbakery.com/contact" }
-            - { label: "FAQ", value: "theblendedbakery.com/faq" }
+            - { label: "Home", value: "/" }
+            - { label: "About", value: "/about" }
+            - { label: "Services", value: "/services" }
+            - { label: "Order", value: "/order" }
+            - { label: "Contact", value: "/contact" }
+            - { label: "FAQ", value: "/faq" }
     - label: "About"
       name: "about"
       file: "content/about.md"
