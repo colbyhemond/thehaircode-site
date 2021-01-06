@@ -32,6 +32,16 @@ collections:
         - { label: "Card 1 - Title", name: "card1Title", widget: "string" }
         - { label: "Card 1 - Text", name: "card1Text", widget: "text" }
         - { label: "Card 1 - Button Text", name: "card1ButtonText", widget: "string" }
+        - label: "Card 1 - Button Link"
+          name: "buttonLink1"
+          widget: "select"
+          options:
+            - { label: "Home", value: "theblendedbakery.com" }
+            - { label: "About", value: "theblendedbakery.com/about" }
+            - { label: "Services", value: "theblendedbakery.com/services" }
+            - { label: "Order", value: "theblendedbakery.com/order" }
+            - { label: "Contact", value: "theblendedbakery.com/contact" }
+            - { label: "FAQ", value: "theblendedbakery.com/faq" }
         - label: "Card 2 - Image"
           name: "card2Img"
           widget: "image"
@@ -42,6 +52,16 @@ collections:
         - { label: "Card 2 - Title", name: "card2Title", widget: "string" }
         - { label: "Card 2 - Text", name: "card2Text", widget: "text" }
         - { label: "Card 2 - Button Text", name: "card2ButtonText", widget: "string" }
+        - label: "Card 2 - Button Link"
+          name: "buttonLink2"
+          widget: "select"
+          options:
+            - { label: "Home", value: "theblendedbakery.com" }
+            - { label: "About", value: "theblendedbakery.com/about" }
+            - { label: "Services", value: "theblendedbakery.com/services" }
+            - { label: "Order", value: "theblendedbakery.com/order" }
+            - { label: "Contact", value: "theblendedbakery.com/contact" }
+            - { label: "FAQ", value: "theblendedbakery.com/faq" }
         - label: "Card 3 - Image"
           name: "card-3-img"
           widget: "image"
@@ -52,6 +72,16 @@ collections:
         - { label: "Card 3 - Title", name: "card3Title", widget: "string" }
         - { label: "Card 3 - Text", name: "card3Text", widget: "text" }
         - { label: "Card 3 - Button Text", name: "card3ButtonText", widget: "string" }
+        - label: "Card 3 - Button Link"
+          name: "buttonLink3"
+          widget: "select"
+          options:
+            - { label: "Home", value: "theblendedbakery.com" }
+            - { label: "About", value: "theblendedbakery.com/about" }
+            - { label: "Services", value: "theblendedbakery.com/services" }
+            - { label: "Order", value: "theblendedbakery.com/order" }
+            - { label: "Contact", value: "theblendedbakery.com/contact" }
+            - { label: "FAQ", value: "theblendedbakery.com/faq" }
     - label: "About"
       name: "about"
       file: "content/about.md"
