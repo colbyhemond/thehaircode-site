@@ -20,8 +20,8 @@ collections:
           media_library:
             config:
               multiple: true
-        - { label: "Jumtotron Text 1", name: "jumboText1", widget: "string" }
-        - { label: "Jumtotron Text 2", name: "jumboText2", widget: "string" }
+        - { label: "Jumtotron Text 1", name: "jumboText1", widget: "string", required: false }
+        - { label: "Jumtotron Text 2", name: "jumboText2", widget: "string", required: false }
         - label: "Card 1 - Image"
           name: "card1Img"
           widget: "image"
