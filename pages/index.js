@@ -14,9 +14,9 @@ export default class Home extends Component {
     let { 
       title, 
       jumbotron, jumboText1, jumboText2,
-      card1Img, card1Title, card1Text, card1ButtonText,
-      card2Img, card2Title, card2Text, card2ButtonText,
-      card3Img, card3Title, card3Text, card3ButtonText
+      card1Img, card1Title, card1Text, card1ButtonText, buttonLink1, 
+      card2Img, card2Title, card2Text, card2ButtonText, buttonLink2,
+      card3Img, card3Title, card3Text, card3ButtonText, buttonLink3
      } = attributes;
     return (
       <>
@@ -36,7 +36,7 @@ export default class Home extends Component {
                   <Card.Text>
                     { card1Text }
                   </Card.Text>
-                  <Button variant="primary">{ card1ButtonText }</Button>
+                  <Button variant="primary" href={ buttonLink1 }>{ card1ButtonText }</Button>
                 </Card.Body>
               </Card>
               <Card style={{ width: '18rem' }}>
@@ -46,7 +46,7 @@ export default class Home extends Component {
                   <Card.Text>
                     { card2Text }
                   </Card.Text>
-                  <Button variant="primary">{ card2ButtonText }</Button>
+                  <Button variant="primary" href={ buttonLink2 }>{ card2ButtonText }</Button>
                 </Card.Body>
               </Card>
               <Card style={{ width: '18rem' }}>
@@ -56,7 +56,7 @@ export default class Home extends Component {
                   <Card.Text>
                     { card3Text }
                   </Card.Text>
-                  <Button variant="primary">{ card3ButtonText }</Button>
+                  <Button variant="primary" href={ buttonLink3 }>{ card3ButtonText }</Button>
                 </Card.Body>
               </Card>
             </div>
