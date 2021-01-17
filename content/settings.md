@@ -1,4 +1,4 @@
 ---
-title: Settings
-titleFont: ""
+titleFont: Parisienne
 ---
+
