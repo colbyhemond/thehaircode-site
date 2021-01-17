@@ -1,4 +1,4 @@
 ---
-titleFont: Parisienne
+titleFont: Arial
 ---
 
