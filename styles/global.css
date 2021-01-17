@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Radley&display=swap');
 
 :root {
-    --bb-pink: #e1a3ec;
-    --bb-pink-hover: #dc8beb;
+    --ch-button: #ffa500;
+    --ch-button-hover: #fabc4a;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Parisienne', cursive;
+    /* font-family: 'Parisienne', cursive; */
 }
 
 .jumbotron h1 {

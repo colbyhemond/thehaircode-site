@@ -1,9 +1,14 @@
 backend:
   name: git-gateway
-  branch: master
+  branch: main
 media_folder: public/img
 public_folder: img
 collections:
+  - name: "settings"
+    label: "Settings"
+    file: "content/settings.md"
+    fields:
+      - { label: "Title Font", name: "titleFont", widget: "string" }
   - name: "pages"
     label: "Pages"
     files:

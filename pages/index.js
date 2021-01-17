@@ -81,13 +81,13 @@ export default class Home extends Component {
           }
 
           .btn {
-            background-color: var(--bb-pink);
-            border-color: var(--bb-pink);
+            background-color: var(--ch-button);
+            border-color: var(--ch-button);
           }
 
           .btn:hover {
-            background-color: var(--bb-pink-hover);
-            border-color: var(--bb-pink-hover);
+            background-color: var(--ch-button-hover);
+            border-color: var(--ch-button-hover);
           }
           
           `

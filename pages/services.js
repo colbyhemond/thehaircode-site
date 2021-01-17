@@ -29,7 +29,7 @@ export default class Home extends Component {
                   </div>
                 )}
             </div>
-            <ImgRow img1={ img1 } img2={ img2 } img3={ img3 } />
+           
           </div>
         </Layout>
         
