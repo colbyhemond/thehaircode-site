@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function App({ Component, pageProps }) {
   let { 
-    titleFonts
+    titleFont
    } = attributes;
 
     return (
@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }) {
       <style type="text/css"> {
         ` 
         h1, h2, h3, h4, h5, h6 {
-          font-family: ${ titleFonts };
+          font-family: '${ titleFont }';
       }
         
         `
