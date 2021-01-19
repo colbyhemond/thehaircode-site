@@ -1,9 +1,9 @@
 ---
 title: Home
 date: 2019-03-17T19:31:20.591Z
-jumbotron: 'https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1647&q=80'
-jumboText1: 'The Blended Bakery'
-jumboText2: 'The best cookies ever!'
+jumbotron: ''
+jumboText1: ''
+jumboText2: ''
 card1Img: 'https://images.unsplash.com/photo-1531257243018-c547a2e35767?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1082&q=80'
 # Card One
 card1Title: 'Card Title'

@@ -1,13 +1,12 @@
 .logo {
     padding: 0vh 5vh;
-    width: 25vh;
+    width: 20vh;
 }
 
-.button {
-    color: black;
+.navbartoggler {
+    background-color: var(--primary-text) !important;
 }
 
-.button:hover {
-    color: white;
-    background-color: var(--bb-pink);
+div .button {
+    
 }

@@ -4,14 +4,16 @@ import Link from "next/link";
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 
+
 const NavBar = props => (
-  <Navbar bg="light" expand="lg">
+
+  <Navbar className={styles.navbar} expand="lg">
     <Navbar.Brand href="">
       <Link href="/">
-      <img className={styles.logo} src='/blended-logo.jpg'></img>
+      <img className={styles.logo} src='/assets/hc_logo_white.svg' onMouseOver={e => e.currentTarget.src = '/assets/hc_logo_closed_white.svg' } onMouseOut={e => e.currentTarget.src = '/assets/hc_logo_white.svg' }></img>
       </Link>
     </Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Toggle className={styles.navbartoggler} aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
         {props.navButtons.map(button => (
@@ -24,6 +26,7 @@ const NavBar = props => (
       </Nav>
     </Navbar.Collapse>
   </Navbar>
+
 );
 
 export default NavBar;

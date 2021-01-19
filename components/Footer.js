@@ -7,7 +7,7 @@ import Nav from "react-bootstrap/Nav"
 const Footer = props => (
     <div>
         
-        <Navbar bg="light" expand="lg" className="py-5">
+        <Navbar expand="lg" className="py-5">
             <Nav className="mx-auto">
                 {props.navButtons.map(button => (
                 <div className={styles.button} key={button.path}>
@@ -18,7 +18,7 @@ const Footer = props => (
 
         </Navbar>
         <div className="d-flex justify-content-center py-2">
-            Copyright { year } The Blended Bakery
+            Copyright { year } The Hair Code
         </div>
     
     </div>

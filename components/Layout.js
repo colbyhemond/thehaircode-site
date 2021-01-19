@@ -7,7 +7,7 @@ import Footer from './Footer'
 
 import navButtons from '../config/buttons'
 
-export const siteTitle = 'Demo Website'
+export const siteTitle = 'The Hair Code Salon'
 
 export default function Layout({ children, home, title }) {
     return (
