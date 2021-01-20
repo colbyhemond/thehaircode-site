@@ -22,7 +22,7 @@ const ContactForm = props => (
                 <textarea name="message" id="message" rows="4"></textarea>
             </p>
             <p>
-                <button type="submit" className="d-flex mx-auto btn btn-primary">Send</button>
+                <button type="submit" className="d-flex mx-auto btn justify-content-center">Send</button>
             </p>
         </form>
 );

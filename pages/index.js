@@ -31,8 +31,8 @@ export default class Home extends Component {
     return (
       <>
         <Layout home title={title}>
-          <div className="jumbotron fluid">
-            <div className=''>
+          <div className="jumbotron fluid test">
+            <div className='jumbotron-content'>
               <div className="container-fluid center">
               <img className="logo" src="./assets/hc_logo_white.svg"></img>
               <h1>{ jumboText1 }</h1>
@@ -68,9 +68,12 @@ export default class Home extends Component {
           </div>
 
         </Layout>
+
         
         <style type="text/css"> {
           `
+          
+
           .jumbotron {
             color: white;
             // background-image: url('${jumbotron}');
@@ -78,7 +81,12 @@ export default class Home extends Component {
             // background-image: url('https://images.unsplash.com/photo-1598887142487-3c854d51eabb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
             // background-image: url('https://thehaircodesalon.com/wp-content/uploads/2016/07/cropped-IMG_2788.jpg');
             
-           background-color: #DDD !important;
+            // background-image: url('https://images.unsplash.com/photo-1561889053-c22fe12cce8c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1618&q=80');
+
+            background-image: url('https://images.unsplash.com/photo-1590540178973-02381b349071?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80');
+
+            
+            background-color: #DDD !important;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -88,6 +96,12 @@ export default class Home extends Component {
             justify-content: center;
             align-items: center;
             padding-bottom: 5em;
+            
+            // filter: grayscale(100%);
+          }
+
+          .jumbotron {
+            // filter: grayscale(100%);
           }
           
           .card {
@@ -96,7 +110,7 @@ export default class Home extends Component {
 
           .logo {
             margin-bottom: 50px;
-            filter: drop-shadow(0px 0px 8px #666);
+            filter: drop-shadow(0px 0px 8px #121);
             max-width: 85%;
           }
 
@@ -110,6 +124,7 @@ export default class Home extends Component {
            width: 10%;
            max-width: 75px;
            margin: 0 20px;
+           filter: drop-shadow(0 40px 10px #000)
          }
           
           `
