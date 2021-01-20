@@ -31,10 +31,40 @@ export default function Layout({ children, home, title }) {
         <title>{title} - { siteTitle }</title>
         </Head>
         <NavBar navButtons={navButtons} className='body' />
-
+        <div className="social">
+          <a href="">
+              <img src="./assets/social/facebook.svg"></img>
+            </a>
+            <a href="">
+              <img src="./assets/social/twitter.svg"></img>
+            </a>
+            <a href="">
+              <img src="./assets/social/instagram.svg"></img>
+            </a>
+          </div>
         <main className={styles.main}>{children}</main>
 
         <Footer navButtons={navButtons} className='body' />
+        <style type="text/css"> {`
+
+        .social {
+            background-color: #ddd;
+            color: black;
+            text-align: center;
+            padding: 10px 0;
+          }
+
+          .social img {
+            max-height: 25px;
+            margin: 0 15px;
+            filter: drop-shadow(0px 2px 2px grey)
+          }
+
+          .social img:hover {
+            filter: drop-shadow(0 0px 2px pink)
+          }
+
+        `}</style>
         </>
      )
 }

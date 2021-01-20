@@ -4,12 +4,11 @@
 
 .form input {
     width: 100%;
+    background-color: var(--white-ch)
 }
 
 .form textarea {
-    width: 100%
+    width: 100%;
+    background-color: var(--white-ch)
 }
 
-.form button {
-    background-color: #e1a3ec;
-}

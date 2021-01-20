@@ -1,12 +1,23 @@
+.navbar {
+    box-shadow: 0 5px 20px black;
+}
+
 .logo {
     padding: 0vh 5vh;
     width: 20vh;
 }
 
 .navbartoggler {
-    background-color: var(--primary-text) !important;
+    background-color: var(--white-ch) !important;
 }
 
-div .button {
+.button {
+    margin: 0 10px;
+    border-bottom: 3px solid #111;
+    font-weight: bold;
+}
+
+.button:hover {
+    border-bottom: 3px solid var(--teal-ch);
     
 }

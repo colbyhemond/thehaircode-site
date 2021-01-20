@@ -10,8 +10,9 @@
 :root {
     --ch-button: #ffa500;
     --ch-button-hover: #fabc4a;
-    --primary-background: #111;
-    --primary-text: #fff;
+    --black-ch: #111;
+    --white-ch: #fff;
+    --teal-ch: #2cddcb;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,21 +24,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .jumbotron {
-    /* background-color: var(--primary-background) !important; */
-    background-color: #222 !important;
     box-shadow: 0px 0px 500px #0e0e0e inset ;
 }
 
 main {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    background-color: var(--primary-background);
-    color: var(--primary-text)
+    background-color: var(--black-ch);
+    color: var(--white-ch);
+    color: #ddd
 }
 
 nav {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    background-color: var(--primary-background);
-    color: var(--primary-text)
+    background-color: var(--black-ch);
+    color: var(--white-ch);
+    color: #ddd
 }
 
 .img-align-left {
@@ -50,29 +51,38 @@ nav {
     margin-left: 20px;
 }
 
-.body {
-    margin-top: 20px;
+.container {
+    max-width: 700px !important;
 }
 
-.container {
-    padding-top: 2em;
+.container > div {
+    padding-top: 2em !important;
+    padding: 5em 5em !important;
+    color: var(--white-ch);
+    width: 100%;
+    border-top: 5px solid var(--white-ch);
+    border-bottom: 5px solid var(--white-ch);
 }
 
 .btn {
-    background-color: var(--primary-background) !important;
-    border: 3px solid var(--primary-text) !important;
-    border-radius: 0px !important;
+    background-color: var(--black-ch) !important;
+    border: 3px solid var(--white-ch) !important;
+    border-radius: 7px !important;
     padding: 10px 30px !important;
     margin: 10px 15px !important;
-    box-shadow: 0 0 5px #333;
+    box-shadow: 0px 0px 5px #777;
     width: 90%;
     max-width: 175px;
+    font-weight: bold !important;
+    color:var(--white-ch) !important;
 }
 
 .btn:hover {
-    background-color: rgb(0,0,0,0.85) !important;
-    color: #2cddcb !important;
-    border: 3px solid #2cddcb !important;
+    background-color: var(--black-ch) !important;
+    color: var(--teal-ch) !important;
+    /* color: #666 !important; */
+    border: 3px solid #ccc !important;
+    /* box-shadow: 0 0 5px #555 inset; */
     box-shadow: none;
 }
 

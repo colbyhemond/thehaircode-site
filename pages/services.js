@@ -9,11 +9,7 @@ export default class Home extends Component {
   render() {
     let { 
       title, 
-      services, 
-      image,
-      img1,
-      img2,
-      img3
+      services
     } = attributes;
     return (
       <>
@@ -21,12 +17,21 @@ export default class Home extends Component {
           <div className="container">
             <h1>{ title }</h1>
             <div className="body">
-              <img className="img-align-right" src={ image } />
                 {services.map( service => 
-                  <div key={service.service}>
-                    <h2 key={service.service}>{service.service}</h2>
-                    <p key={service.service}>{service.description}</p>
+                  <div key={service.service} className="row">
+                    <div className='col d-flex  align-self-center justify-content-end'>
+                      <h2 key={service.service} className="">{service.service}</h2>
+                     
+                    </div>
+                    <h1>\</h1>
+                    <div className='col d-flex align-self-center'>
+                      <h4 key={service.service}>{service.price}</h4>
+                    </div>
+             
                   </div>
+             
+                    
+           
                 )}
             </div>
            

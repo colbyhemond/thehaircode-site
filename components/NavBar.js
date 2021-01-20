@@ -15,7 +15,7 @@ const NavBar = props => (
     </Navbar.Brand>
     <Navbar.Toggle className={styles.navbartoggler} aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="mr-auto">
+      <Nav className="ml-auto">
         {props.navButtons.map(button => (
         <div className={styles.button} key={button.path}>
           <NavButton // key={button.path.toString()} 

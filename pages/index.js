@@ -50,8 +50,9 @@ export default class Home extends Component {
               </div>
             </div>
           </div>
-          <div className="container text-center">
-            <p>The Hair Code Salon in Traverse City, Michigan is here to provide both a superior customer experience and tremendous value. Each client will walk out the door after seeing the hair stylist feeling better and more alive than when they walked in.</p>
+          <div className="container">
+            <p className="text-center">The Hair Code Salon in Traverse City, Michigan is here to provide you with a superior customer experience and tremendous value. Our goal is for you to walk out the door feeling better and more alive than when you walked in.</p>
+            <p className="text-center">Don't just take our word for it. See what I customers have to say.</p>
             <div className="star-row d-flex justify-content-center">
               <img className="star" src="./assets/star.svg"></img>
               <img className="star" src="./assets/star.svg"></img>
@@ -59,13 +60,18 @@ export default class Home extends Component {
               <img className="star" src="./assets/star.svg"></img>
               <img className="star" src="./assets/star.svg"></img>
             </div>
+            <div className="d-flex flex-column">
+              <p>After searching for a stylist who was up-to-date on the latest trends and techniques, I was pleased to find Chad! His recommendations, precision and eye for perfection ensure my hair is always looking its best.</p>
+              <p>Harth Goulette, Traverse City</p>
+            </div>
             
           </div>
 
         </Layout>
         
         <style type="text/css"> {
-          ` .jumbotron {
+          `
+          .jumbotron {
             color: white;
             // background-image: url('${jumbotron}');
             
@@ -90,11 +96,14 @@ export default class Home extends Component {
 
           .logo {
             margin-bottom: 50px;
-            filter: drop-shadow(0 0px 5px #111);
+            filter: drop-shadow(0px 0px 8px #666);
             max-width: 85%;
           }
+
+          
+
          .star-row {
-      
+            margin: 20px 0;
          }
 
          .star {

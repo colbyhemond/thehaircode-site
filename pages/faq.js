@@ -50,10 +50,26 @@ export default class Home extends Component {
 
           .card-header {
             font-weight: bold;
+            background-color: var(--black-ch);
+            color: var(--white-ch);
+            border-bottom: 3px solid var(--black-ch);
           }
 
           .card-header:hover {
-            background-color: #EEE;
+            border-bottom: 3px solid var(--teal-ch);
+          }
+
+          .card {
+            color: var(--black-ch);
+            border: none;
+            
+          }
+
+          .card-body {
+            background-color: var(--white-ch);
+            color: var(--black-ch);
+            box-shadow: 0 5px 20px var(--black-ch) inset;
+            
           }
           
           `

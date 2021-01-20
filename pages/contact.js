@@ -27,20 +27,7 @@ export default class Home extends Component {
         <style type="text/css"> {
           ` 
           
-          .container {
-            max-width: 700px;
-          }
-
-          .btn {
-            background-color: var(--bb-pink);
-            border-color: var(--bb-pink);
-            padding: 5px 30px;
-          }
-
-          .btn:hover {
-            background-color: var(--bb-pink-hover);
-            border-color: var(--bb-pink-hover);
-          }
+          
           
           `
         }

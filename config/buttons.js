@@ -9,29 +9,30 @@ import {
 
 const navButtons = [
   {
-    label: "Home",
+    label: "HOME",
     path: "/"
   },
   {
-    label: "About",
+    label: "ABOUT",
     path: "/about"
   },
   {
-    label: "Services",
+    label: "SERVICES",
     path: "/services"
   },
   {
-    label: "Order Inquiries",
-    path: "/order"
-  },
-  {
-    label: "Contact",
-    path: "/contact"
+    label: "GALLERY",
+    path: "/gallery"
   },
   {
     label: "FAQ",
     path: "/faq"
-  }
+  },
+  {
+    label: "CONTACT",
+    path: "/contact"
+  },
+  
 ];
 
 export default navButtons;

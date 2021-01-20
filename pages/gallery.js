@@ -1,6 +1,6 @@
 import Head from "next/head"
 import { Component } from 'react'
-import { attributes, react as HomeContent } from '../content/order.md';
+import { attributes, react as HomeContent } from '../content/gallery.md';
 import Layout from '../components/Layout'
 import OrderForm from '../components/OrderForm'
 

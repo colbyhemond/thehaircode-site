@@ -1,11 +1,29 @@
 ---
 title: Services
 services:
-  - service: "Cookies"
-    description: 'delicious cookies.'
-  - service: "Classes"
-    description: 'fun classes'
-img1: /img/airplane_cookie.jpg
-img2: /img/globe_cookie.jpg
-img3: /img/suitcase_cookie.jpg
+  - service: "Blow & Go"
+    price: '$30'
+    description: ''
+  - service: "Haircut"
+    price: '$56'
+    description: ''
+  - service: "Clipper Cut"
+    price: '$45'
+    description: ''
+  - service: "Color"
+    price: 'starting at $85'
+    description: ''
+  - service: "Partial Highlight"
+    price: 'starting at $95'
+    description: ''
+  - service: "Full Highlight"
+    price: 'starting at $130'
+    description: ''
+  - service: "Ombre"
+    price: 'starting at $180'
+    description: '(Consultation Required)'
+  - service: "KeraStraight"
+    price: 'Starting at $180'
+    description: ''
+
 ---
