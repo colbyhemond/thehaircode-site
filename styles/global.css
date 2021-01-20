@@ -59,7 +59,6 @@ nav {
 
 .container > div {
     padding-top: 2em !important;
-    padding: 5em 5em !important;
     color: var(--white-ch);
     width: 100%;
     border-top: 5px solid var(--white-ch);

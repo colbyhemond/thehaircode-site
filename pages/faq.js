@@ -50,8 +50,6 @@ export default class Home extends Component {
 
           .card-header {
             font-weight: bold;
-            // background-color: var(--black-ch);
-            
             color: var(--white-ch);
             border-bottom: 3px solid rgb(0,0,0,0);
           }
@@ -64,7 +62,7 @@ export default class Home extends Component {
             color: var(--black-ch);
             border: none;
             background-color: rgb(0,0,0,0);
-            
+    
           }
 
           .card-body {
