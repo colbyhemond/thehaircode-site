@@ -5,12 +5,14 @@
 }
 
 .logo {
-    padding: 0vh 5vh;
-    width: 20vh;
+    padding: 1vh 5vh;
+    width: 100%;
+    height: auto;
 }
 
 .navbartoggler {
     background-color: var(--white-ch) !important;
+    align-self: center;
 }
 
 .button {

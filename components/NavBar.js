@@ -10,7 +10,7 @@ const NavBar = props => (
   <Navbar className={styles.navbar} expand="lg">
     <Navbar.Brand href="">
       <Link href="/">
-      <img className={styles.logo} src='/assets/hc_logo_white.svg' onMouseOver={e => e.currentTarget.src = '/assets/hc_logo_closed_white.svg' } onMouseOut={e => e.currentTarget.src = '/assets/hc_logo_white.svg' }></img>
+        <img className={styles.logo} src='/assets/hc_logo_name_white.svg' onMouseOver={e => e.currentTarget.src = '/assets/hc_logo_name_closed_white.svg' } onMouseOut={e => e.currentTarget.src = '/assets/hc_logo_name_white.svg' }></img>
       </Link>
     </Navbar.Brand>
     <Navbar.Toggle className={styles.navbartoggler} aria-controls="basic-navbar-nav" />

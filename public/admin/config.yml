@@ -37,11 +37,13 @@ collections:
       fields:
         - { label: "Title", name: "title", required: false, widget: "string"}
         - { label: "Body", name: "body", required: false, widget: "markdown"}
+        - { label: "Appt Text", name: "apptText", required: false, widget: "text"}
         - label: Stylists
           name: stylists
           widget: list
           fields:
-            - { label: Name, name: name, widget: text }
+            - { label: First Name, name: nameFirst, widget: text }
+            - { label: Last Name, name: nameLast, widget: text }
             - { label: Title, name: title, widget: text }
             - { label: About, name: about, widget: string }
             - label: "Image" 

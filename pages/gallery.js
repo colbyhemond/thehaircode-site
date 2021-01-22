@@ -2,7 +2,10 @@ import Head from "next/head"
 import { Component } from 'react'
 import { attributes, react as HomeContent } from '../content/gallery.md';
 import Layout from '../components/Layout'
-import OrderForm from '../components/OrderForm'
+
+let url2 = 'https://thehaircodesalon.com/wp-content/uploads/2017/04/hc_4-676x676.jpg'
+let url1 = './assets/Chad1_300x400.jpg'
+
 
 export default class Order extends Component {
   render() {
@@ -12,8 +15,12 @@ export default class Order extends Component {
         <Layout title={title}>
           <div className="container">
             <h1>{title}</h1>
-            <div className="body d-flex justify-content-center pb-3"> 
-              <OrderForm />
+            <div className="d-flex flex-wrap gallery justify-content-center"> 
+              <a ><img src={url1}></img></a>
+              <a ><img src={url2}></img></a>
+              <a ><img src={url1}></img></a>
+              <a ><img src={url1}></img></a>
+              <a ><img src={url2}></img></a>
             </div>
           </div>
 
@@ -23,23 +30,17 @@ export default class Order extends Component {
 
         <style type="text/css"> {
           ` 
-          
           .container {
-            max-width: 700px;
+            max-width: 900px !important;
           }
 
-          .btn {
-            background-color: var(--ch-button);
-            border-color: var(--ch-button);
-            padding: 5px 30px;
+          .gallery img {
+            height: auto;
+            width: 250px;
+            margin: 20px;
+            box-shadow: 0 0 50px #000;
+            border: 5px solid var(--white-ch);
           }
-
-          .btn:hover {
-            background-color: var(--ch-button-hover);
-            border-color: var(--ch-button-hover);
-          }
-
-       
           
           `
         }

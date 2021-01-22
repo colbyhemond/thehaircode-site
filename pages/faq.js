@@ -18,7 +18,7 @@ export default class Home extends Component {
     return (
       <>
         <Layout title={title}>
-          <div className="container body">
+          <div className="container">
             <h1>{title}</h1>
             <Accordion>
               {faqs.map( faq =>
@@ -44,18 +44,14 @@ export default class Home extends Component {
             max-width: 300px;
           }
 
-          .container {
-            max-width: 700px;
-          }
-
           .card-header {
             font-weight: bold;
             color: var(--white-ch);
-            border-bottom: 3px solid rgb(0,0,0,0);
+            border-bottom: 4px solid rgb(0,0,0,0);
           }
 
           .card-header:hover {
-            border-bottom: 3px solid var(--teal-ch);
+            border-bottom: 4px solid var(--teal-ch);
           }
 
           .card {

@@ -4,11 +4,20 @@ import { attributes, react as AboutContent } from '../content/about.md';
 import Layout from '../components/Layout'
 import ImgRow from '../components/ImgRow'
 
+import SponsoredButton from '../components/SponsoredButton'
+
+function test(text) {
+  if (text == null) {
+    return "Set up an appointment with"
+  }
+  return text
+}
 
 export default class Home extends Component {
   render() {
     let { 
-      title, 
+      title,
+      apptText, 
       stylists
     } = attributes;
     return (
@@ -16,47 +25,51 @@ export default class Home extends Component {
         <Layout title={title}>
           <div className="container">
             <h1>{ title }</h1>
-            {/* <div className="body">
-              <div className="col-12">
-                <AboutContent />
-              </div>
-            </div> */}
-            <div className="body">
                 { stylists.map( stylist => 
-                  <div key={stylist.name} className="row stylistRow">
-                    <div className='col-12 col-sm-5 stylistImg'>
+                  <div key={stylist.name} className="stylistRow d-flex flex-wrap align-items-center">
+                    <div className='col-sm-4 stylistImg text-center'>
                       <img key={stylist.name} src={stylist.image}></img>
                     </div>
-                    <div className='col-12 col-sm-7'>
-                      <h2 key={stylist.name} className="">{stylist.name}</h2>
-                      <p key={stylist.name}>{stylist.title}</p>
-                      <p key={stylist.name}>{stylist.about}</p>
+                    <div className="col-1"></div>
+                    <div className='col-sm-7 stylistInfo'>
+                      <h2 key={stylist.nameFirst} className="">{stylist.nameFirst} {stylist.nameLast}</h2>
+                      <p>{stylist.title}</p>
+                      <p>{stylist.about}</p>
+                      
+                      <p>{test(apptText)} {stylist.nameFirst}</p>
+                  
+                      <SponsoredButton/>
                     </div>
                   </div>
                 )}
-            </div>
           </div>
         </Layout>
 
         <style type="text/css"> {
           ` 
-          // .img {
-          //   max-width: 300px;
-          //   width: 100%;
-          //   height: auto;
-          // }
 
           .stylistImg img {
             height: 300px;
             width: auto;
+            box-shadow: 0 0 75px #000;  
+            margin-top: 25px;
+            margin-bottom: 25px; 
+                     
+          }
+
+          .stylistInfo {
+            padding: 25px;
+            box-shadow: 0 0 75px #000;  
+            margin-top: 25px;
+            margin-bottom: 25px; 
           }
 
           .stylistRow {
-            min-height: 400px
-          }
-
-          .container {
-            max-width: 700px;
+            // min-height: 400px
+            height: 100%;
+            width: 100%;
+            margin-bottom: 50px;
+            
           }
           
           `

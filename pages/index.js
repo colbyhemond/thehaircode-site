@@ -2,20 +2,12 @@ import Head from "next/head"
 import { Component } from 'react'
 import { attributes, react as HomeContent } from '../content/home.md';
 import Layout from '../components/Layout'
+import SponsoredButton from '../components/SponsoredButton'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 
 import navButtons from "../config/buttons";
-
-const hover = function (element) {
-  // console.log(element);
-  // element.setAttribute('src', './assets/hc_logo_closed_white.svg');
-}
-
-function unhover(element) {
-  // element.setAttribute('src', './assets/hc_logo_white.svg');
-}
 
 export default class Home extends Component {
   
@@ -28,6 +20,7 @@ export default class Home extends Component {
       card2Img, card2Title, card2Text, card2ButtonText, buttonLink2,
       card3Img, card3Title, card3Text, card3ButtonText, buttonLink3
      } = attributes;
+
     return (
       <>
         <Layout home title={title}>
@@ -40,13 +33,15 @@ export default class Home extends Component {
               </div>
               <div className="container-fluid">
                 <div className="row">
-                  <div className="col-12 col-sm-6">
-                    <Button>Book Now</Button>
-                  </div>
-                  <div className="col-12 col-sm-6">
+                <div className="col-12 col-sm-6">
                     <Button>Services</Button>
                   </div>
+                  <div className="col-12 col-sm-6">
+                    <SponsoredButton />
+                  </div>
+                  
                 </div>
+                
               </div>
             </div>
           </div>
@@ -111,6 +106,7 @@ export default class Home extends Component {
           .logo {
             margin-bottom: 50px;
             filter: drop-shadow(0px 0px 8px #121);
+            // height: 200px;
             max-width: 85%;
           }
 
