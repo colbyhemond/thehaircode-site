@@ -33,7 +33,7 @@ export default class Home extends Component {
                     <div className="col-1"></div>
                     <div className='col-sm-7 stylistInfo'>
                       <h2 key={stylist.nameFirst} className="">{stylist.nameFirst} {stylist.nameLast}</h2>
-                      <p>{stylist.title}</p>
+                      <p><strong>{stylist.title}</strong></p>
                       <p>{stylist.about}</p>
                       
                       <p>{test(apptText)} {stylist.nameFirst}</p>

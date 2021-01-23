@@ -13,8 +13,6 @@ export const siteTitle = 'The Hair Code Salon'
 
 export default function Layout({ children, home, title }) {
 
-  console.log(attributes.social[0].facebook);
-
     return (
         <>
         <Head>

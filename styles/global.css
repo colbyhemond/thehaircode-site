@@ -5,6 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Radley&display=swap');
 
+@font-face {
+    font-family: hughs;
+    src: url(../public/fonts/Hughs.otf);
+  }
+
+  @font-face {
+    font-family: montserrat;
+    src: url(../public/fonts/Montserrat-Regular.otf);
+  }
 
 
 :root {
@@ -16,7 +25,15 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--title-fonts);
+    font-family: hughs, "Helvetica", Arial, sans-serif !important; 
+}
+
+h1 {
+    font-size: 48pt !important;
+}
+
+p {
+    font-family: montserrat, "Helvetica", Arial, sans-serif !important;
 }
 
 .jumbotron h1 {
@@ -63,7 +80,7 @@ nav {
 }
 
 .container > h1 {
-    padding: 2em 0;
+    padding: 1em 0;
     text-align: center;
 }
 
