@@ -9,15 +9,20 @@ let url1 = './assets/Chad1_300x400.jpg'
 
 export default class Order extends Component {
   render() {
-    let { title } = attributes;
+    let { title, images } = attributes;
     return (
       <>
         <Layout title={title}>
           <div className="container">
             <h1>{title}</h1>
             <div className="d-flex flex-wrap gallery justify-content-center"> 
-              <a ><img src={url1}></img></a>
-              <a ><img src={url2}></img></a>
+            {images.map( image =>
+                <a><img src={image}></img></a>
+              )}
+              
+              
+              
+              <a ><img ></img></a>
               <a ><img src={url1}></img></a>
               <a ><img src={url1}></img></a>
               <a ><img src={url2}></img></a>
