@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: public/img
-public_folder: img
+media_folder: public/assets/images
+public_folder: images
 collections:
   - name: "settings"
     label: "Settings"
@@ -37,14 +37,14 @@ collections:
       fields:
         - { label: "Title", name: "title", required: false, widget: "string"}
         - { label: "Body", name: "body", required: false, widget: "markdown"}
-        - { label: "Appt Text", name: "apptText", required: false, widget: "text"}
+        - { label: "Appt Text", name: "apptText", required: false, widget: "string"}
         - label: Stylists
           name: stylists
           widget: list
           fields:
-            - { label: First Name, name: nameFirst, widget: text }
-            - { label: Last Name, name: nameLast, widget: text }
-            - { label: Title, name: title, widget: text }
+            - { label: First Name, name: nameFirst, widget: string }
+            - { label: Last Name, name: nameLast, widget: string }
+            - { label: Title, name: title, widget: string }
             - { label: About, name: about, widget: string }
             - label: "Image" 
               name: "image"
@@ -64,16 +64,29 @@ collections:
           name: services
           widget: list
           fields:
-            - { label: Service Name, name: service, widget: text }
-            - { label: Service Price, name: price, widget: text }
+            - { label: Service Name, name: service, widget: string }
+            - { label: Service Price, name: price, widget: string }
             - { label: Description, name: description, widget: string }
-        
+    - label: "Gallery"
+      name: "galleryImages"
+      widget: "list"
+      summary: '{{fields.image}}'
+      file:  "content/gallery.md"
+      fields:
+        - {label: Image, name: image, widget: image}
     - label: "Gallery"
       name: "gallery"
       file: "content/gallery.md"
       fields:
         - { label: "Title", name: "title", required: false, widget: "string"}
         - { label: "Message", name: "message", widget: "string"}
+        - label: "Featured Image"
+          name: "thumbnail"
+          widget: "image"
+          default: "/assets/images/hc_logo_white.svg"
+          media_library:
+            config:
+              multiple: true
     - label: "Contact"
       name: "contact"
       file: "content/contact.md"
@@ -91,5 +104,5 @@ collections:
           name: "faqs"
           widget: "list"
           fields:
-            - {label: Question, name: question, widget: text, default: "[write the question here]"}
-            - {label: Answer, name: answer, widget: text, default: "[write the answer here]"}
+            - {label: Question, name: question, widget: string, default: "[write the question here]"}
+            - {label: Answer, name: answer, widget: string, default: "[write the answer here]"}
