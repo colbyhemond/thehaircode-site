@@ -68,25 +68,16 @@ collections:
             - { label: Service Price, name: price, widget: string }
             - { label: Description, name: description, widget: string }
     - label: "Gallery"
-      name: "galleryImages"
-      widget: "list"
-      summary: '{{fields.image}}'
-      file:  "content/gallery.md"
-      fields:
-        - {label: Image, name: image, widget: image}
-    - label: "Gallery"
       name: "gallery"
       file: "content/gallery.md"
       fields:
         - { label: "Title", name: "title", required: false, widget: "string"}
         - { label: "Message", name: "message", widget: "string"}
-        - label: "Featured Image"
-          name: "thumbnail"
-          widget: "image"
-          default: "/assets/images/hc_logo_white.svg"
-          media_library:
-            config:
-              multiple: true
+        - label: "Images"
+          name: "images"
+          widget: "list"
+          fields:
+          - {label: Image, name: image, widget: image}
     - label: "Contact"
       name: "contact"
       file: "content/contact.md"
