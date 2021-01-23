@@ -2,7 +2,7 @@
 title: Gallery
 message: blah
 images:
-  - image: /images/hc_1.jpg
-  - image: /images/hc_4.jpg
+  - image: /assets/images/hc_1.jpg
+  - image: /assets/images/hc_4.jpg
 ---
 

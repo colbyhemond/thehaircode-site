@@ -60,7 +60,7 @@ export default function Layout({ children, home, title }) {
           .social img {
             max-height: 25px;
             margin: 0 15px;
-            filter: drop-shadow(0px 3px 2px grey)
+            filter: drop-shadow(0px 3px 2px grey);
           }
 
           .social img:hover {
