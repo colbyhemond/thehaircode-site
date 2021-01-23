@@ -7,11 +7,23 @@ collections:
   - name: "settings"
     label: "Settings"
     files:
-      - label: "Style Settings"
-        name: "styleSettings"
+      - label: "General"
+        name: "general"
         file: "content/settings.md"
         fields:
-          - { label: "Title Font", name: "titleFont", widget: "string" }
+          - label: "Social Media"
+            name: "socialmedia"
+            widget: "object" 
+            fields:
+              - {label: "Facebook", name: "facebook", widget: string, required: false}
+              - {label: "Twitter", name: "twitter", widget: string, required: false}
+              - {label: "Instagram", name: "instagram", widget: string, required: false}
+          - label: "Booking"
+            name: "booking"
+            widget: object
+            fields:
+              - {label: "Button Text", name: "buttonText", widget: string, required: false}
+              - {label: "Link", name: "link", widget: string}
   - name: "pages"
     label: "Pages"
     files:

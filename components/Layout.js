@@ -7,7 +7,7 @@ import Footer from './Footer'
 import { attributes, react as SettingsContent } from '../content/settings.md';
 import navButtons from '../config/buttons'
 
-let { facebook, twitter, instagram } = attributes.social[0];
+let { facebook, twitter, instagram } = attributes.socialmedia[0];
 
 export const siteTitle = 'The Hair Code Salon'
 
@@ -35,7 +35,7 @@ export default function Layout({ children, home, title }) {
         </Head>
         <NavBar navButtons={navButtons} className='body' />
         <div className="social">
-          <a href={ facebook }>
+          <a href={ facebook}>
               <img src="./assets/social/facebook.svg"></img>
             </a>
             <a href={ twitter }>
