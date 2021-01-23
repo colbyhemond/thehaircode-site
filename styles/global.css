@@ -15,6 +15,11 @@
     src: url(../public/fonts/Montserrat-Regular.otf);
   }
 
+  @font-face {
+    font-family: montserrat-bold;
+    src: url(../public/fonts/Montserrat-Bold.otf);
+  }
+
 
 :root {
     --ch-button: #ffa500;
@@ -32,8 +37,12 @@ h1 {
     font-size: 48pt !important;
 }
 
-p {
+p, div {
     font-family: montserrat, "Helvetica", Arial, sans-serif !important;
+}
+
+strong {
+    font-family: montserrat-bold, "Helvetica", Arial, sans-serif !important;
 }
 
 .jumbotron h1 {
