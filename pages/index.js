@@ -34,7 +34,7 @@ export default class Home extends Component {
               <div className="container-fluid">
                 <div className="row">
                 <div className="col-12 col-sm-6">
-                    <Button>Services</Button>
+                    <Button href="/services">Services</Button>
                   </div>
                   <div className="col-12 col-sm-6">
                     <SponsoredButton />

@@ -4,12 +4,17 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import NavBar from './NavBar'
 import Footer from './Footer'
-
+import { attributes, react as SettingsContent } from '../content/settings.md';
 import navButtons from '../config/buttons'
+
+let { facebook, twitter, instagram } = attributes.social[0];
 
 export const siteTitle = 'The Hair Code Salon'
 
 export default function Layout({ children, home, title }) {
+
+  console.log(attributes.social[0].facebook);
+
     return (
         <>
         <Head>
@@ -32,13 +37,13 @@ export default function Layout({ children, home, title }) {
         </Head>
         <NavBar navButtons={navButtons} className='body' />
         <div className="social">
-          <a href="">
+          <a href={ facebook }>
               <img src="./assets/social/facebook.svg"></img>
             </a>
-            <a href="">
+            <a href={ twitter }>
               <img src="./assets/social/twitter.svg"></img>
             </a>
-            <a href="">
+            <a href={ instagram }>
               <img src="./assets/social/instagram.svg"></img>
             </a>
           </div>
