@@ -42,7 +42,13 @@ collections:
               multiple: false
         - { label: "Jumtotron Text 1", name: "jumboText1", widget: "string", required: false }
         - { label: "Jumtotron Text 2", name: "jumboText2", widget: "string", required: false }
-        
+        - label: "Testimonials"
+          name: "testimonials"
+          collapsed: false
+          widget: "list"
+          fields:
+            - {label: Quote, name: quote, widget: string }
+            - {label: Client, name: client, widget: string }
     - label: "About"
       name: "about"
       file: "content/about.md"
