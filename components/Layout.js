@@ -7,7 +7,7 @@ import Footer from './Footer'
 import { attributes, react as SettingsContent } from '../content/settings.md';
 import navButtons from '../config/buttons'
 
-let { facebook, twitter, instagram } = attributes.socialmedia[0];
+let { facebook, twitter, instagram } = attributes.socialmedia;
 
 export const siteTitle = 'The Hair Code Salon'
 

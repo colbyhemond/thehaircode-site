@@ -2,7 +2,7 @@ import Button from 'react-bootstrap/Button';
 import { attributes, react as SettingsContent } from '../content/settings.md';
 
 
-let { link, img, buttonText } = attributes.booking[0];
+let { link, img, buttonText } = attributes.booking;
 
 
 const SponsoredButton = props => (
