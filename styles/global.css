@@ -27,14 +27,19 @@
     --black-ch: #222;
     --white-ch: #fff;
     --teal-ch: #55ffee;
+    --heading-ch: hughs;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: hughs, "Helvetica", Arial, sans-serif !important; 
+    font-family: var(--heading-ch), "Helvetica", Arial, sans-serif !important; 
 }
 
 h1 {
     font-size: 48pt !important;
+}
+
+h2 {
+    font-size: 36pt !important;
 }
 
 p, div {
@@ -89,7 +94,7 @@ nav {
 }
 
 .container > h1, .container > h2 {
-    padding: 1em 0 0.5em 0;
+    padding: 1em 0 0 0;
     text-align: center;
 }
 

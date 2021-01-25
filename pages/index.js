@@ -48,7 +48,7 @@ export default class Home extends Component {
             <p className="text-center">Don't just take our word for it. See what our customers have to say...</p>
             
             <h2>Testimonials</h2>
-            <div className="star-row d-flex justify-content-center my-5">
+            <div className="star-row d-flex justify-content-center">
               <img className="star" src="./assets/star.svg"></img>
               <img className="star" src="./assets/star.svg"></img>
               <img className="star" src="./assets/star.svg"></img>
@@ -59,8 +59,8 @@ export default class Home extends Component {
             <div className="d-flex flex-column">
               {testimonials.map( testimonial => 
               <div className="testimonial">
-                <p key={testimonial.client}>{testimonial.quote}</p>
-                <h4>- <strong>{testimonial.client}</strong>, {testimonial.location}</h4>
+                <p key={testimonial.client}><span>" </span>{testimonial.quote}<span> "</span></p>
+                <h5>- <strong>{testimonial.client}</strong>, {testimonial.location}</h5>
               </div>
                 )}
             </div>
@@ -126,13 +126,18 @@ export default class Home extends Component {
             border-bottom: 3px solid var(--teal-ch);
             margin: 10px 0;
             padding: 40px;
-            font-size: 14pt;
+            // font-size: 14pt;
           }
 
           .testimonial:hover {
             // border: 3px solid var(--teal-ch);
             margin: 10px 0;
             padding: 40px;
+          }
+
+          .testimonial span {
+            font-family: var(--heading-ch);
+            font-size: 16pt;
           }
           
           .card {
