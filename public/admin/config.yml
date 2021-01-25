@@ -47,8 +47,9 @@ collections:
           collapsed: false
           widget: "list"
           fields:
-            - {label: Quote, name: quote, widget: string }
+            - {label: Quote, name: quote, widget: text }
             - {label: Client, name: client, widget: string }
+            - {label: Location, name: location, widget: string, required: false }
     - label: "About"
       name: "about"
       file: "content/about.md"

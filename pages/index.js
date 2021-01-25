@@ -16,9 +16,7 @@ export default class Home extends Component {
     let { 
       title, 
       jumbotron, jumboText1, jumboText2,
-      card1Img, card1Title, card1Text, card1ButtonText, buttonLink1, 
-      card2Img, card2Title, card2Text, card2ButtonText, buttonLink2,
-      card3Img, card3Title, card3Text, card3ButtonText, buttonLink3
+      testimonials
      } = attributes;
 
     return (
@@ -28,7 +26,7 @@ export default class Home extends Component {
             <div className='jumbotron-content'>
               <div className="container-fluid center">
               <img className="logo" src="./assets/hc_logo_white.svg"></img>
-              <h1>{ jumboText1 }</h1>
+              <p className="jtext1">LIVE BY THE CODE</p>
               <p>{ jumboText2 }</p>
               </div>
               <div className="container-fluid">
@@ -46,18 +44,25 @@ export default class Home extends Component {
             </div>
           </div>
           <div className="container">
-            <p className="text-center">The Hair Code Salon in Traverse City, Michigan is here to provide you with a superior customer experience and tremendous value. Our goal is for you to walk out the door feeling better and more alive than when you walked in.</p>
-            <p className="text-center">Don't just take our word for it. See what I customers have to say.</p>
-            <div className="star-row d-flex justify-content-center">
+            <p className="text-center"><strong>The Hair Code Salon</strong> in Traverse City, Michigan is here to provide you with a superior customer experience and tremendous value. Our goal is for you to walk out the door feeling better and more alive than when you walked in.</p>
+            <p className="text-center">Don't just take our word for it. See what our customers have to say...</p>
+            
+            <h2>Testimonials</h2>
+            <div className="star-row d-flex justify-content-center my-5">
               <img className="star" src="./assets/star.svg"></img>
               <img className="star" src="./assets/star.svg"></img>
               <img className="star" src="./assets/star.svg"></img>
               <img className="star" src="./assets/star.svg"></img>
               <img className="star" src="./assets/star.svg"></img>
             </div>
+            
             <div className="d-flex flex-column">
-              <p>After searching for a stylist who was up-to-date on the latest trends and techniques, I was pleased to find Chad! His recommendations, precision and eye for perfection ensure my hair is always looking its best.</p>
-              <p>Harth Goulette, Traverse City</p>
+              {testimonials.map( testimonial => 
+              <div className="testimonial">
+                <p key={testimonial.client}>{testimonial.quote}</p>
+                <h4>- <strong>{testimonial.client}</strong>, {testimonial.location}</h4>
+              </div>
+                )}
             </div>
             
           </div>
@@ -92,36 +97,52 @@ export default class Home extends Component {
             align-items: center;
             padding-bottom: 5em;
             
-            // filter: grayscale(100%);
           }
 
           .jumbotron {
             // filter: grayscale(100%);
+          }
+
+          .jtext1 {
+            font-size: 28pt;
+          }
+
+          .logo {
+            margin-bottom: 0px;
+            filter: drop-shadow(0px 0px 8px #121);
+            // height: 200px;
+            max-width: 85%;
+          }
+
+          .star {
+            width: 7%;
+            max-width: 75px;
+            min-width: 25px;
+            margin: 0 1em;
+            filter: drop-shadow(0 40px 10px #000)
+          }
+
+          .testimonial {
+            border-bottom: 3px solid var(--teal-ch);
+            margin: 10px 0;
+            padding: 40px;
+            font-size: 14pt;
+          }
+
+          .testimonial:hover {
+            // border: 3px solid var(--teal-ch);
+            margin: 10px 0;
+            padding: 40px;
           }
           
           .card {
             margin: 20px;
           }
 
-          .logo {
-            margin-bottom: 50px;
-            filter: drop-shadow(0px 0px 8px #121);
-            // height: 200px;
-            max-width: 85%;
-          }
-
           
 
-         .star-row {
-            margin: 20px 0;
-         }
 
-         .star {
-           width: 10%;
-           max-width: 75px;
-           margin: 0 20px;
-           filter: drop-shadow(0 40px 10px #000)
-         }
+         
           
           `
         }

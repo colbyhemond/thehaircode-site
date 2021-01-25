@@ -30,7 +30,9 @@ export default class Home extends Component {
               </div>
               )}
             </div>
+            <div className="my-5">
                 <SponsoredButton/>
+                </div>
           </div>
         </Layout>
         

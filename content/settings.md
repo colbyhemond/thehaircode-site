@@ -1,8 +1,8 @@
 ---
 socialmedia:
-  { facebook: https://www.facebook.com,
-    twitter: "https://www.twitter.com",
-    instagram: "https://www.instagram.com" }
+  { facebook: http://facebook.com/thehaircodesalon,
+    twitter: http://twitter.com/thehaircodetc,
+    instagram: http://instagram.com/thehaircodesalon }
  
 booking:
  { buttonText: "Book Now",

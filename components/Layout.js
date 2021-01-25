@@ -64,7 +64,7 @@ export default function Layout({ children, home, title }) {
           }
 
           .social img:hover {
-            filter: drop-shadow(0 0px 2px pink) saturate(2);
+            filter: drop-shadow(0 0px 2px var(--teal-ch)) saturate(1.5);
           }
 
         `}</style>
