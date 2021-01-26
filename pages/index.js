@@ -44,7 +44,9 @@ export default class Home extends Component {
             </div>
           </div>
           <div className="container">
+            <div className="d-flex text-justify container">
              <HomeContent/>
+             </div>
             <h2>Testimonials</h2>
             <div className="star-row d-flex justify-content-center">
               <img className="star" src="./assets/star.svg"></img>
@@ -133,8 +135,8 @@ export default class Home extends Component {
           .star {
             width: 7%;
             max-width: 75px;
-            min-width: 25px;
-            margin: 0 1em;
+            min-width: 40px;
+            margin: 0 15px;
             filter: drop-shadow(0 40px 10px #000)
           }
 
