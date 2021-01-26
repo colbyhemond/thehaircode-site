@@ -72,13 +72,12 @@ export default class Home extends Component {
                 </div>
             </div>
             <div className="d-flex justify-content-center mx-auto text-center">
-            <Button href="/gallery">Gallery</Button>
-            
+              <Button href="/gallery">Gallery</Button>
+
             </div>
-            <div className="d-flex align-items-center justify-content-center mx-auto my-5 text-center">
-                <h3 className="mr-3">Feel your best:</h3>
-            <SponsoredButton />
-            
+            <div className="d-flex flex-wrap align-items-center justify-content-center mx-auto my-5 text-center">
+              <h3 className="mr-3">Feel your best:</h3>
+              <SponsoredButton />
             </div>
             
             
@@ -141,7 +140,7 @@ export default class Home extends Component {
 
           .testimonial {
             border-bottom: 3px solid var(--teal-ch);
-            margin: 10px 0;
+            margin: 0px 0 10px 0;
             padding: 40px;
             // font-size: 14pt;
           }

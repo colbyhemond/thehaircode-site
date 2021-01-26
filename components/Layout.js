@@ -35,9 +35,9 @@ export default function Layout({ children, home, title }) {
         </Head>
         <NavBar navButtons={navButtons} className='body' />
         <div className="social d-flex text-center">
-          <div className="col-0 col-sm-4 d-none d-sm-block">
+          <div className="col d-none d-sm-block">
           </div>
-          <div className="col-9 col-sm-4">
+          <div className="col">
             <a href={ facebook}>
               <img src="./assets/social/facebook.svg"></img>
             </a>
@@ -49,8 +49,8 @@ export default function Layout({ children, home, title }) {
             </a>
           </div>
 
-          <div className="col-4">
-            <a href="tel:231-620-9251"><img src=""></img><strong className="d-none d-sm-inline">(231) 620-9251</strong></a>
+          <div className="col">
+            <a href="tel:231-620-9251"><img src=""></img><strong>(231) 620-9251</strong></a>
           </div>
         </div>
           
