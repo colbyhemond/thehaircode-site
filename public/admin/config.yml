@@ -24,6 +24,16 @@ collections:
             fields:
               - {label: "Button Text", name: "buttonText", widget: string, required: false}
               - {label: "Link", name: "link", widget: string}
+          - label: "Contact & Location"
+            name: contact
+            widget: object
+            fields:
+              - {label: "Phone", name: "phone", widget: string, required: false}
+              - {label: "Email", name: "email", widget: string, required: false}
+              - {label: "Address Line 1", name: "address1", widget: string, required: false}
+              - {label: "Address Line 2", name: "address2", widget: string, required: false}
+              - {label: "City", name: "city", widget: string, required: false}
+              - {label: "State", name: "state", widget: string, required: false}
   - name: "pages"
     label: "Pages"
     files:
@@ -32,16 +42,13 @@ collections:
       file: "content/home.md"
       fields:
         - { label: "Title", name: "title", widget: "string"}
-        - { label: "Publish Date", name: "date", widget: "datetime" }
         - label: "Jumbotron" 
           name: "jumbotron"
           widget: "image"
-          default: ""
           media_library:
             config:
               multiple: false
         - { label: "Jumtotron Text 1", name: "jumboText1", widget: "string", required: false }
-        - { label: "Jumtotron Text 2", name: "jumboText2", widget: "string", required: false }
         - label: "Testimonials"
           name: "testimonials"
           collapsed: false
@@ -50,13 +57,21 @@ collections:
             - {label: Quote, name: quote, widget: text }
             - {label: Client, name: client, widget: string }
             - {label: Location, name: location, widget: string, required: false }
+        - label: "Featured Images"
+          name: featured
+          widget: list
+          min: 1
+          max: 3
+          fields:
+            - {label: Image, name: image, widget: image, required: false  }
+            - {label: Description, name: alt, widget: string, required: false  }
+
     - label: "About"
       name: "about"
       file: "content/about.md"
       fields:
         - { label: "Title", name: "title", required: false, widget: "string"}
-        - { label: "Body", name: "body", required: false, widget: "markdown"}
-        - { label: "Appt Text", name: "apptText", required: false, widget: "string"}
+        - { label: "Set up text", name: "apptText", required: false, default: "Set up an appointment with", widget: "string"}
         - label: Stylists
           name: stylists
           widget: list
@@ -114,5 +129,5 @@ collections:
           name: "faqs"
           widget: "list"
           fields:
-            - {label: Question, name: question, widget: string, default: "[write the question here]"}
-            - {label: Answer, name: answer, widget: string, default: "[write the answer here]"}
+            - {label: Question, name: question, widget: string }
+            - {label: Answer, name: answer, widget: markdown }

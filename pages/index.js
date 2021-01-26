@@ -16,7 +16,8 @@ export default class Home extends Component {
     let { 
       title, 
       jumbotron, jumboText1, jumboText2,
-      testimonials
+      testimonials,
+      featured
      } = attributes;
 
     return (
@@ -26,8 +27,7 @@ export default class Home extends Component {
             <div className='jumbotron-content'>
               <div className="container-fluid center">
               <img className="logo" src="./assets/hc_logo_white.svg"></img>
-              <p className="jtext1">LIVE BY THE CODE</p>
-              <p>{ jumboText2 }</p>
+              <p className="jtext1"><strong>LIVE BY THE CODE</strong></p>
               </div>
               <div className="container-fluid">
                 <div className="row">
@@ -44,9 +44,7 @@ export default class Home extends Component {
             </div>
           </div>
           <div className="container">
-            <p className="text-center"><strong>The Hair Code Salon</strong> in Traverse City, Michigan is here to provide you with a superior customer experience and tremendous value. Our goal is for you to walk out the door feeling better and more alive than when you walked in.</p>
-            <p className="text-center">Don't just take our word for it. See what our customers have to say...</p>
-            
+             <HomeContent/>
             <h2>Testimonials</h2>
             <div className="star-row d-flex justify-content-center">
               <img className="star" src="./assets/star.svg"></img>
@@ -64,6 +62,25 @@ export default class Home extends Component {
               </div>
                 )}
             </div>
+
+            <div className="featured text-center">
+              <h2>Fresh Cuts & Colors</h2>
+              <div className="d-flex flex-wrap justify-content-center">
+                <img src={featured.one} alt={featured.onealt}></img>
+                <img src={featured.two} alt={featured.twoalt}></img>
+                <img src={featured.three} alt={featured.threealt}></img>
+                </div>
+            </div>
+            <div className="d-flex justify-content-center mx-auto text-center">
+            <Button href="/gallery">Gallery</Button>
+            
+            </div>
+            <div className="d-flex align-items-center justify-content-center mx-auto my-5 text-center">
+                <h3 className="mr-3">Feel your best:</h3>
+            <SponsoredButton />
+            
+            </div>
+            
             
           </div>
 
@@ -144,8 +161,17 @@ export default class Home extends Component {
             margin: 20px;
           }
 
+          .featured {
+            padding: 5em 0 0 0;
+          }
           
-
+          .featured img {
+            height: auto;
+            max-width: 225px;
+            margin: 15px;
+            box-shadow: 0 0 50px #000;
+            border: 5px solid var(--white-ch);
+          }
 
          
           

@@ -21,11 +21,11 @@ export default class Home extends Component {
               {services.map( service =>
               <div key={service.service} className="row">
                 <div className='col d-flex  align-self-center justify-content-end'>
-                  <p key={service.service} className=""><strong>{service.service}</strong></p>
+                  <p key={service.service} className="service"><strong>{service.service}</strong></p>
                 </div>
-                <h2>/</h2>
+                <h2>/</h2><h3>/</h3>
                 <div className='col d-flex align-self-center'>
-                  <p key={service.service}>{service.price}</p>
+                  <p key={service.service} className="price">{service.price}</p>
                 </div>
               </div>
               )}
@@ -39,6 +39,13 @@ export default class Home extends Component {
 
         <style type="text/css"> {
           ` 
+          .service {
+            font-size: 16pt;
+          }
+
+          .price {
+            font-size: 14pt;
+          }
           
           `
         }

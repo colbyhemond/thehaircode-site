@@ -8,26 +8,37 @@
 @font-face {
     font-family: hughs;
     src: url(../public/fonts/Hughs.otf);
+    font-display: swap;
   }
 
   @font-face {
     font-family: montserrat;
     src: url(../public/fonts/Montserrat-Regular.otf);
+    font-display: swap;
   }
 
   @font-face {
     font-family: montserrat-bold;
     src: url(../public/fonts/Montserrat-Bold.otf);
+    font-display: swap;
   }
 
+  @font-face {
+    font-family: lobster;
+    src: url(../public/fonts/Lobster-Regular.ttf);
+    font-display: swap;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Oleo+Script&family=Sarina&family=Yellowtail&family=Yesteryear&display=swap');
 
 :root {
     --ch-button: #ffa500;
     --ch-button-hover: #fabc4a;
     --black-ch: #222;
     --white-ch: #fff;
-    --teal-ch: #55ffee;
-    --heading-ch: hughs;
+    --teal-ch: rgb(85, 255, 238);
+    --heading-ch: 'Oleo script';
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -40,6 +51,10 @@ h1 {
 
 h2 {
     font-size: 36pt !important;
+}
+
+h3 {
+    font-size: 28pt !important;
 }
 
 p, div {

@@ -34,8 +34,11 @@ export default function Layout({ children, home, title }) {
         <title>{title} - { siteTitle }</title>
         </Head>
         <NavBar navButtons={navButtons} className='body' />
-        <div className="social">
-          <a href={ facebook}>
+        <div className="social d-flex text-center">
+          <div className="col-0 col-sm-4 d-none d-sm-block">
+          </div>
+          <div className="col-9 col-sm-4">
+            <a href={ facebook}>
               <img src="./assets/social/facebook.svg"></img>
             </a>
             <a href={ twitter }>
@@ -45,15 +48,25 @@ export default function Layout({ children, home, title }) {
               <img src="./assets/social/instagram.svg"></img>
             </a>
           </div>
+
+          <div className="col-4">
+            <a href="tel:231-620-9251"><img src=""></img><strong className="d-none d-sm-inline">(231) 620-9251</strong></a>
+          </div>
+        </div>
+          
         <main className={styles.main}>{children}</main>
 
         <Footer navButtons={navButtons} className='body' />
         <style type="text/css"> {`
 
+        html {
+          overflow-x: hidden;
+        }
+
         .social {
             background-color: #ddd;
             color: black;
-            text-align: center;
+            // text-align: center;
             padding: 10px 0;
           }
 
@@ -65,6 +78,10 @@ export default function Layout({ children, home, title }) {
 
           .social img:hover {
             filter: drop-shadow(0 0px 2px var(--teal-ch)) saturate(1.5);
+          }
+
+          a {
+            color: var(--black-ch);
           }
 
         `}</style>

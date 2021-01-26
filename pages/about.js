@@ -6,13 +6,6 @@ import ImgRow from '../components/ImgRow'
 
 import SponsoredButton from '../components/SponsoredButton'
 
-function test(text) {
-  if (text == null) {
-    return "Set up an appointment with"
-  }
-  return text
-}
-
 export default class Home extends Component {
   render() {
     let { 
@@ -32,11 +25,11 @@ export default class Home extends Component {
                     </div>
                     <div className="col-1"></div>
                     <div className='col-sm-7 stylistInfo'>
-                      <h2 key={stylist.nameFirst} className="">{stylist.nameFirst} {stylist.nameLast}</h2>
+                      <h3 key={stylist.nameFirst} className="">{stylist.nameFirst} {stylist.nameLast}</h3>
                       <p><strong>{stylist.title}</strong></p>
                       <p>{stylist.about}</p>
                       
-                      <p>{test(apptText)} {stylist.nameFirst}</p>
+                      <p>{apptText} {stylist.nameFirst}</p>
                   
                       <SponsoredButton/>
                     </div>
@@ -49,12 +42,13 @@ export default class Home extends Component {
           ` 
 
           .stylistImg img {
-            height: 300px;
-            width: auto;
+            height: auto;
+            width: 100%;
+            max-width: 250px;
             box-shadow: 0 0 75px #000;  
             margin-top: 25px;
             margin-bottom: 25px; 
-                     
+            filter: grayscale(1);
           }
 
           .stylistInfo {
