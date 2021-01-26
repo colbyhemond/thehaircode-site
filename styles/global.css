@@ -39,6 +39,11 @@
     --teal-ch: rgb(85, 255, 238);
     --heading-ch: 'Oleo script';
 
+
+}
+
+div {
+    overflow-x: hidden;  
 }
 
 h1, h2, h3, h4, h5, h6 {

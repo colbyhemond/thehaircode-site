@@ -167,6 +167,7 @@ export default class Home extends Component {
           
           .featured img {
             height: auto;
+            max-height: 225px;
             max-width: 225px;
             margin: 15px;
             box-shadow: 0 0 50px #000;
