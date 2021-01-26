@@ -35,9 +35,9 @@ export default function Layout({ children, home, title }) {
         </Head>
         <NavBar navButtons={navButtons} className='body' />
         <div className="social d-flex text-center">
-          <div className="col d-none d-sm-block">
+          <div className="col d-none d-sm-block col-sm-4">
           </div>
-          <div className="col">
+          <div className="col-6  col-sm-4">
             <a href={ facebook}>
               <img src="./assets/social/facebook.svg"></img>
             </a>
@@ -49,7 +49,7 @@ export default function Layout({ children, home, title }) {
             </a>
           </div>
 
-          <div className="col">
+          <div className="col-6  col-sm-4">
             <a href="tel:231-620-9251"><img src=""></img><strong>(231) 620-9251</strong></a>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function Layout({ children, home, title }) {
 
           .social img {
             max-height: 25px;
-            margin: 0 15px;
+            margin: 0 5%;
             filter: drop-shadow(0px 3px 2px grey);
           }
 

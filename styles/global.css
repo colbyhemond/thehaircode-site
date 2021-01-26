@@ -95,8 +95,10 @@ nav {
 }
 
 .navbar-brand {
-    width: 25%;
-    min-width: 250px;
+    width: 80%;
+    max-width: 350px;
+    min-width: 200px;
+    margin: 0 !important;
 }
 
 .img-align-left {

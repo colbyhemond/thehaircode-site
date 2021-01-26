@@ -59,7 +59,7 @@ export default class Home extends Component {
             <div className="d-flex flex-column">
               {testimonials.map( testimonial => 
               <div className="testimonial">
-                <p key={testimonial.client}><span>" </span>{testimonial.quote}<span> "</span></p>
+                <p key={testimonial.client}>"{testimonial.quote}"</p>
                 <h5>- <strong>{testimonial.client}</strong>, {testimonial.location}</h5>
               </div>
                 )}
@@ -136,14 +136,14 @@ export default class Home extends Component {
             width: 7%;
             max-width: 75px;
             min-width: 40px;
-            margin: 0 15px;
+            margin: 0 2%;
             filter: drop-shadow(0 40px 10px #000)
           }
 
           .testimonial {
             border-bottom: 3px solid var(--teal-ch);
-            margin: 0px 0 10px 0;
-            padding: 40px;
+            margin: 0px 0 0px 0;
+            padding: 20px 40px 40px 40px;
             // font-size: 14pt;
           }
 
