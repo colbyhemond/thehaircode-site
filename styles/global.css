@@ -2,15 +2,6 @@
 /* This is the only custom file an !important tag will be used in order to override any boostrap styling */
 /*      *****           *****           *****               *****           *****           *****        */
 
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Radley&display=swap');
-
-@font-face {
-    font-family: hughs;
-    src: url(../public/fonts/Hughs.otf);
-    font-display: swap;
-  }
-
   @font-face {
     font-family: montserrat;
     src: url(../public/fonts/Montserrat-Regular.otf);
@@ -24,12 +15,17 @@
   }
 
   @font-face {
-    font-family: lobster;
-    src: url(../public/fonts/Lobster-Regular.ttf);
+    font-family: oleoscript;
+    src: url(../public/fonts/OleoScript-Regular.ttf);
     font-display: swap;
   }
 
-  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Oleo+Script&family=Sarina&family=Yellowtail&family=Yesteryear&display=swap');
+  @font-face {
+    font-family: oleoscript-bold;
+    src: url(../public/fonts/OleoScript-Bold.ttf);
+    font-display: swap;
+  }
+
 
 :root {
     --ch-button: #ffa500;
@@ -37,9 +33,7 @@
     --black-ch: #222;
     --white-ch: #fff;
     --teal-ch: rgb(85, 255, 238);
-    --heading-ch: 'Oleo script';
-
-
+    --heading-ch: oleoscript;
 }
 
 div {
@@ -47,7 +41,7 @@ div {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-ch), "Helvetica", Arial, sans-serif !important; 
+    font-family: var(--heading-ch), montserrat-bold, "Helvetica", Arial, sans-serif !important; 
 }
 
 h1 {

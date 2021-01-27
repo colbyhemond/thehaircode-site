@@ -147,12 +147,6 @@ export default class Home extends Component {
             // font-size: 14pt;
           }
 
-          .testimonial:hover {
-            // border: 3px solid var(--teal-ch);
-            margin: 10px 0;
-            padding: 40px;
-          }
-
           .testimonial span {
             font-family: var(--heading-ch);
             font-size: 16pt;
