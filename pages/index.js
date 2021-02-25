@@ -58,8 +58,8 @@ export default class Home extends Component {
             
             <div className="d-flex flex-column">
               {testimonials.map( testimonial => 
-              <div className="testimonial">
-                <p key={testimonial.client}>"{testimonial.quote}"</p>
+              <div className="testimonial" key={testimonial.client}>
+                <p >"{testimonial.quote}"</p>
                 <h5>- <strong>{testimonial.client}</strong>, {testimonial.location}</h5>
               </div>
                 )}
