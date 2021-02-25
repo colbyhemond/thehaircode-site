@@ -39,13 +39,14 @@ export default class Home extends Component {
 
         <style type="text/css"> {
           ` 
-          .service {
-            font-size: 14pt;
-          }
+          // .service {
+          //   font-size: 1rem;
 
-          .price {
-            font-size: 12pt;
-          }
+          // }
+
+          // .price {
+          //   font-size: 12pt;
+          // }
 
           .service-row {
             margin: 5px 0;
