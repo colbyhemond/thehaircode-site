@@ -22,8 +22,9 @@ collections:
             name: "booking"
             widget: object
             fields:
-              - {label: "Button Text", name: "buttonText", widget: string, required: false}
+              - {label: "Button Text", name: "buttonText", widget: string}
               - {label: "Link", name: "link", widget: string}
+              - {label: "Logo", name: "img", widget: string, required: false}
           - label: "Contact & Location"
             name: contact
             widget: object
