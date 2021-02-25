@@ -45,7 +45,7 @@ export default class Home extends Component {
             height: auto;
             width: 100%;
             max-width: 250px;
-            box-shadow: 0 0 75px #000;  
+            box-shadow: 0 0 30px #111; 
             margin-top: 25px;
             margin-bottom: 25px; 
             filter: grayscale(1);
@@ -53,9 +53,10 @@ export default class Home extends Component {
 
           .stylistInfo {
             padding: 25px;
-            box-shadow: 0 0 75px #000;  
+            box-shadow: 0 0 30px #111; 
             margin-top: 25px;
             margin-bottom: 25px; 
+            background-color: #222;
           }
 
           .stylistRow {
