@@ -114,7 +114,6 @@ collections:
       file: "content/gallery.md"
       fields:
         - { label: "Title", name: "title", required: false, widget: "string"}
-        - { label: "Message", name: "message", widget: "string"}
         - label: "Images"
           name: "images"
           widget: "list"
