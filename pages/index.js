@@ -135,9 +135,7 @@ export default class Home extends Component {
 
           .testimonial {
             border-bottom: 3px solid var(--teal-ch);
-            margin: 0px 0 0px 0;
             padding: 20px 40px 40px 40px;
-            // font-size: 14pt;
           }
 
           .testimonial span {

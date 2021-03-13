@@ -64,16 +64,13 @@ export default function Layout({ children, home, title }) {
         }
 
         .social {
-            background-color: #ddd;
             color: black;
-            // text-align: center;
             padding: 10px 0;
           }
 
           .social img {
             max-height: 25px;
-            margin: 0 5%;
-            filter: drop-shadow(0px 3px 2px grey);
+            filter: drop-shadow(0px 3px 2px #555);
           }
 
           .social img:hover {
