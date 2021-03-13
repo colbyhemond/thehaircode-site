@@ -1,5 +1,7 @@
 ---
 title: Home
+jumbotron: "https://images.unsplash.com/photo-1590540178973-02381b349071?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80"
+jumboText1: LIVE BY THE CODE
 testimonials:
   - quote: "After searching for a stylist who was up-to-date on the latest trends and techniques, I was pleased to find Chad! His recommendations, precision and eye for perfection ensure my hair is always looking its best."
     client: "Harth Goulette"
@@ -11,9 +13,9 @@ testimonials:
     client: "Tom and Julie Dawson"
     location: "Traverse City"
 featured:
-    { one: /assets/images/hc_4.jpg,
-      two: /assets/images/hc_1.jpg,
-      three: /assets/images/hc_3.jpg }
+    { one: "/assets/images/hc_4.jpg",
+      two: "/assets/images/hc_1.jpg",
+      three: "/assets/images/hc_3.jpg" }
 ---
 **The Hair Code Salon** in Traverse City, Michigan is here to provide you with a superior customer experience and tremendous value. Our goal is for you to walk out the door feeling better and more alive than when you walked in.
 

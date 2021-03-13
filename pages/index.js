@@ -15,7 +15,8 @@ export default class Home extends Component {
     
     let { 
       title, 
-      jumbotron, jumboText1, jumboText2,
+      jumbotron, 
+      jumboText1,
       testimonials,
       featured
      } = attributes;
@@ -27,7 +28,7 @@ export default class Home extends Component {
             <div className='jumbotron-content'>
               <div className="container-fluid center">
               <img className="logo" src="./assets/hc_logo_white.svg"></img>
-              <p className="jtext1"><strong>LIVE BY THE CODE</strong></p>
+                <p className="jtext1"><strong>{jumboText1}</strong></p>
               </div>
               <div className="container-fluid">
                 <div className="row">
@@ -94,16 +95,8 @@ export default class Home extends Component {
 
           .jumbotron {
             color: white;
-            // background-image: url('${jumbotron}');
-            
-            // background-image: url('https://images.unsplash.com/photo-1598887142487-3c854d51eabb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
-            // background-image: url('https://thehaircodesalon.com/wp-content/uploads/2016/07/cropped-IMG_2788.jpg');
-            
-            // background-image: url('https://images.unsplash.com/photo-1561889053-c22fe12cce8c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1618&q=80');
-
-            background-image: url('https://images.unsplash.com/photo-1590540178973-02381b349071?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80');
-
-            
+             background-image: url('${jumbotron}');
+            // background-image: url('https://images.unsplash.com/photo-1590540178973-02381b349071?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80');  
             background-color: #DDD !important;
             background-size: cover;
             background-position: center;
@@ -169,8 +162,6 @@ export default class Home extends Component {
             border: 5px solid var(--white-ch);
           }
 
-         
-          
           `
         }
 
