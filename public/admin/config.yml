@@ -124,7 +124,7 @@ collections:
       file: "content/contact.md"
       fields:
         - { label: "Title", name: "title", required: false, widget: "string"}
-        - { label: "Message", name: "message", widget: "string"}
+        - { label: "Body", name: "body", required: false, widget: "markdown"}
         
     - label: "FAQ"
       name: "faq"
