@@ -50,6 +50,7 @@ collections:
             config:
               multiple: false
         - { label: "Jumtotron Text 1", name: "jumboText1", widget: "string", required: false }
+        - { label: "Body", name: "body", required: false, widget: "markdown"}
         - label: "Testimonials"
           name: "testimonials"
           collapsed: false
@@ -107,7 +108,7 @@ collections:
           fields:
             - { label: Service Name, name: service, widget: string }
             - { label: Service Price, name: price, widget: string }
-            - { label: Description, name: description, widget: string }
+            - { label: Note, name: note, widget: string }
     - label: "Gallery"
       name: "gallery"
       file: "content/gallery.md"
